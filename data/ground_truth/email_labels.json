@@ -1,0 +1,602 @@
+{
+  "e001": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Former intern is asking for a recommendation letter due December 1.",
+    "template": "t_rec_letter"
+  },
+  "e002": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Automated payment notice.",
+    "template": "t_billing_processed"
+  },
+  "e003": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Newsletter with no action needed.",
+    "template": "t_tw_newsletter"
+  },
+  "e004": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Payment receipt.",
+    "template": "t_receipt"
+  },
+  "e005": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Co-host wants an hour this week to review an edit.",
+    "template": "t_cohost_edit"
+  },
+  "e006": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Editor wants a 45-minute call next week.",
+    "template": "t_editor_call"
+  },
+  "e007": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Recap of agreed decisions; no question asked.",
+    "template": "t_meeting_recap"
+  },
+  "e008": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Client is confirming an existing appointment; no reply needed.",
+    "template": "t_client_confirm"
+  },
+  "e009": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "2 progress notes need signing within the 7-day deadline.",
+    "template": "t_tw_documentation"
+  },
+  "e010": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "4 progress notes need signing within the 7-day deadline.",
+    "template": "t_tw_documentation"
+  },
+  "e011": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Supervisor asks for a 30-minute meeting Thursday.",
+    "template": "t_tw_sync"
+  },
+  "e012": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Client is asking a direct question about their homework.",
+    "template": "t_client_homework"
+  },
+  "e013": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Former intern is asking for a recommendation letter due December 1.",
+    "template": "t_rec_letter"
+  },
+  "e014": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Colleague is asking for a referral recommendation.",
+    "template": "t_referral"
+  },
+  "e015": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Former client is requesting a copy of their records.",
+    "template": "t_records_request"
+  },
+  "e016": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Payment receipt.",
+    "template": "t_receipt"
+  },
+  "e017": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Editor says proofs shipped; nothing needed yet.",
+    "template": "t_proofs_shipped"
+  },
+  "e018": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Co-host reports the episode is published; nothing needed.",
+    "template": "t_episode_uploaded"
+  },
+  "e019": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Podcast guest offered three recording times.",
+    "template": "t_guest_times"
+  },
+  "e020": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Professional association newsletter.",
+    "template": "t_association_news"
+  },
+  "e021": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Library proposes two dates for an author talk.",
+    "template": "t_library_event"
+  },
+  "e022": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Client asks to move this week's session.",
+    "template": "t_client_reschedule"
+  },
+  "e023": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Insurer needs Monica to confirm the session code before paying a claim.",
+    "template": "t_billing_confirm"
+  },
+  "e024": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Supervisor wants to move next week's supervision.",
+    "template": "t_move_supervision"
+  },
+  "e025": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Recap of agreed decisions; no question asked.",
+    "template": "t_meeting_recap"
+  },
+  "e026": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Client is struggling and asking to talk before the next session.",
+    "template": "t_client_hard_week"
+  },
+  "e027": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Co-host wants an hour this week to review an edit.",
+    "template": "t_cohost_edit"
+  },
+  "e028": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Co-host needs a title choice tonight.",
+    "template": "t_cohost_titles"
+  },
+  "e029": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "New client wants to book an intake appointment.",
+    "template": "t_new_intake"
+  },
+  "e030": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Automated weekly stats report.",
+    "template": "t_pod_stats"
+  },
+  "e031": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Editor wants a 45-minute call next week.",
+    "template": "t_editor_call"
+  },
+  "e032": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Newsletter with no action needed.",
+    "template": "t_tw_newsletter"
+  },
+  "e033": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Podcast guest is asking for prep questions and guidance.",
+    "template": "t_guest_prep"
+  },
+  "e034": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Editor says proofs shipped; nothing needed yet.",
+    "template": "t_proofs_shipped"
+  },
+  "e035": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Former client is requesting a copy of their records.",
+    "template": "t_records_request"
+  },
+  "e036": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Supervisor wants to move next week's supervision.",
+    "template": "t_move_supervision"
+  },
+  "e037": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Podcast guest offered three recording times.",
+    "template": "t_guest_times"
+  },
+  "e038": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Client is confirming an existing appointment; no reply needed.",
+    "template": "t_client_confirm"
+  },
+  "e039": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Parent is asking whether Monica can share a note and if a release is needed.",
+    "template": "t_parent_consent"
+  },
+  "e040": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Newsletter with no action needed.",
+    "template": "t_tw_newsletter"
+  },
+  "e041": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Promotional email.",
+    "template": "t_ce_promo"
+  },
+  "e042": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Editor says proofs shipped; nothing needed yet.",
+    "template": "t_proofs_shipped"
+  },
+  "e043": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Co-host needs a title choice tonight.",
+    "template": "t_cohost_titles"
+  },
+  "e044": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Co-host needs a title choice tonight.",
+    "template": "t_cohost_titles"
+  },
+  "e045": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Thank-you note from a listener.",
+    "template": "t_listener_thanks"
+  },
+  "e046": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Bookstore needs a bio and headshot by next Monday.",
+    "template": "t_event_bio"
+  },
+  "e047": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Editor needs approval of the back-cover copy by November 13.",
+    "template": "t_editor_approval"
+  },
+  "e048": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Automated weekly stats report.",
+    "template": "t_pod_stats"
+  },
+  "e049": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Professional association newsletter.",
+    "template": "t_association_news"
+  },
+  "e050": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Thank-you note from a listener.",
+    "template": "t_listener_thanks"
+  },
+  "e051": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Thank-you note from a listener.",
+    "template": "t_listener_thanks"
+  },
+  "e052": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Client is confirming an existing appointment; no reply needed.",
+    "template": "t_client_confirm"
+  },
+  "e053": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Automatic calendar acceptance notice.",
+    "template": "t_invite_accepted"
+  },
+  "e054": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Client is asking a direct question about their homework.",
+    "template": "t_client_homework"
+  },
+  "e055": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Automated payment notice.",
+    "template": "t_billing_processed"
+  },
+  "e056": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Automatic calendar acceptance notice.",
+    "template": "t_invite_accepted"
+  },
+  "e057": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "New client wants to book an intake appointment.",
+    "template": "t_new_intake"
+  },
+  "e058": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Automated payment notice.",
+    "template": "t_billing_processed"
+  },
+  "e059": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Client asks to move this week's session.",
+    "template": "t_client_reschedule"
+  },
+  "e060": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Payment receipt.",
+    "template": "t_receipt"
+  },
+  "e061": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Podcast guest offered three recording times.",
+    "template": "t_guest_times"
+  },
+  "e062": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Library proposes two dates for an author talk.",
+    "template": "t_library_event"
+  },
+  "e063": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Editor wants a 45-minute call next week.",
+    "template": "t_editor_call"
+  },
+  "e064": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Professional association newsletter.",
+    "template": "t_association_news"
+  },
+  "e065": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Recap of agreed decisions; no question asked.",
+    "template": "t_meeting_recap"
+  },
+  "e066": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "4 progress notes need signing within the 7-day deadline.",
+    "template": "t_tw_documentation"
+  },
+  "e067": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Colleague is asking for a referral recommendation.",
+    "template": "t_referral"
+  },
+  "e068": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "New client wants to book an intake appointment.",
+    "template": "t_new_intake"
+  },
+  "e069": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Podcast guest offered three recording times.",
+    "template": "t_guest_times"
+  },
+  "e070": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Co-host needs a title choice tonight.",
+    "template": "t_cohost_titles"
+  },
+  "e071": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Supervisor wants to move next week's supervision.",
+    "template": "t_move_supervision"
+  },
+  "e072": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Client is asking a direct question about their homework.",
+    "template": "t_client_homework"
+  },
+  "e073": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Editor needs approval of the back-cover copy by Friday.",
+    "template": "t_editor_approval"
+  },
+  "e074": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Colleague is asking for a referral recommendation.",
+    "template": "t_referral"
+  },
+  "e075": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "New client wants to book an intake appointment.",
+    "template": "t_new_intake"
+  },
+  "e076": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Client is struggling and asking to talk before the next session.",
+    "template": "t_client_hard_week"
+  },
+  "e077": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Library proposes two dates for an author talk.",
+    "template": "t_library_event"
+  },
+  "e078": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Promotional email.",
+    "template": "t_ce_promo"
+  },
+  "e079": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Former intern is asking for a recommendation letter due December 1.",
+    "template": "t_rec_letter"
+  },
+  "e080": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Client is struggling and asking to talk before the next session.",
+    "template": "t_client_hard_week"
+  },
+  "e081": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Co-host wants an hour this week to review an edit.",
+    "template": "t_cohost_edit"
+  },
+  "e082": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Parent is asking whether Monica can share a note and if a release is needed.",
+    "template": "t_parent_consent"
+  },
+  "e083": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Podcast guest is asking for prep questions and guidance.",
+    "template": "t_guest_prep"
+  },
+  "e084": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Former client is requesting a copy of their records.",
+    "template": "t_records_request"
+  },
+  "e085": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Editor needs approval of the back-cover copy by Thursday end of day.",
+    "template": "t_editor_approval"
+  },
+  "e086": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Supervisor asks for a 30-minute meeting Thursday.",
+    "template": "t_tw_sync"
+  },
+  "e087": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Bookstore needs a bio and headshot by next Monday.",
+    "template": "t_event_bio"
+  },
+  "e088": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Co-host reports the episode is published; nothing needed.",
+    "template": "t_episode_uploaded"
+  },
+  "e089": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Editor wants a 45-minute call next week.",
+    "template": "t_editor_call"
+  },
+  "e090": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Parent is asking whether Monica can share a note and if a release is needed.",
+    "template": "t_parent_consent"
+  },
+  "e091": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Podcast guest is asking for prep questions and guidance.",
+    "template": "t_guest_prep"
+  },
+  "e092": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Insurer needs Monica to confirm the session code before paying a claim.",
+    "template": "t_billing_confirm"
+  },
+  "e093": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Insurer needs Monica to confirm the session code before paying a claim.",
+    "template": "t_billing_confirm"
+  },
+  "e094": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Automated weekly stats report.",
+    "template": "t_pod_stats"
+  },
+  "e095": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Bookstore needs a bio and headshot by next Monday.",
+    "template": "t_event_bio"
+  },
+  "e096": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Client asks to move this week's session.",
+    "template": "t_client_reschedule"
+  },
+  "e097": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Promotional email.",
+    "template": "t_ce_promo"
+  },
+  "e098": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Supervisor asks for a 30-minute meeting Thursday.",
+    "template": "t_tw_sync"
+  },
+  "e099": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Co-host reports the episode is published; nothing needed.",
+    "template": "t_episode_uploaded"
+  },
+  "e100": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Former client is requesting a copy of their records.",
+    "template": "t_records_request"
+  }
+}

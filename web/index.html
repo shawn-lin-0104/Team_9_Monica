@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monica's Assistant</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; }
+    pre { background: #f4f4f4; padding: 12px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h1>Monica's Assistant</h1>
+  <p>Placeholder page. The website team replaces everything in <code>web/</code>.
+     Files here are served at <code>/static/...</code>; this page is served at <code>/</code>.</p>
+  <h2>Today's schedule (live from <code>/api/calendar/day</code>)</h2>
+  <pre id="out">Loading…</pre>
+  <script>
+    fetch('/api/calendar/day').then(r => r.json())
+      .then(d => document.getElementById('out').textContent = JSON.stringify(d, null, 2));
+  </script>
+</body>
+</html>

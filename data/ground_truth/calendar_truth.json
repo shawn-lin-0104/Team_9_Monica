@@ -1,0 +1,44 @@
+{
+  "total_raw_events": 105,
+  "expected_merged_events": 101,
+  "duplicate_groups": [
+    [
+      "book/bo-010",
+      "podcast/po-011"
+    ],
+    [
+      "podcast/po-012",
+      "book/bo-011"
+    ],
+    [
+      "thriveworks/th-005",
+      "book/bo-012"
+    ],
+    [
+      "podcast/po-013",
+      "thriveworks/th-006"
+    ]
+  ],
+  "planted_conflicts": [
+    [
+      "podcast/po-014",
+      "thriveworks/th-071"
+    ],
+    [
+      "book/bo-013",
+      "thriveworks/th-072"
+    ],
+    [
+      "book/bo-014",
+      "podcast/po-015"
+    ],
+    [
+      "book/bo-015",
+      "thriveworks/th-073"
+    ],
+    [
+      "podcast/po-016",
+      "thriveworks/th-074"
+    ]
+  ]
+}

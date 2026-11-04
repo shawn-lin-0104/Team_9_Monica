@@ -1,0 +1,202 @@
+{
+  "calendar": "podcast",
+  "timezone": "America/New_York",
+  "events": [
+    {
+      "id": "po-014",
+      "uid": "po-014@podcast.example.com",
+      "title": "Sponsor call",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-10T17:30:00-05:00",
+      "end": "2026-11-10T18:00:00-05:00"
+    },
+    {
+      "id": "po-001",
+      "uid": "po-001@podcast.example.com",
+      "title": "Guest prep",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-11T14:00:00-05:00",
+      "end": "2026-11-11T14:45:00-05:00"
+    },
+    {
+      "id": "po-002",
+      "uid": "po-002@podcast.example.com",
+      "title": "Podcast recording: Thriving Together",
+      "all_day": false,
+      "location": "Riverside studio",
+      "attendees": [
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-11-11T15:00:00-05:00",
+      "end": "2026-11-11T16:30:00-05:00"
+    },
+    {
+      "id": "po-011",
+      "uid": "launch-planning-1@harborlight.example.com",
+      "title": "Book launch planning",
+      "all_day": false,
+      "location": "",
+      "attendees": [
+        "Priya",
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-11-17T17:30:00-05:00",
+      "end": "2026-11-17T18:30:00-05:00"
+    },
+    {
+      "id": "po-003",
+      "uid": "po-003@podcast.example.com",
+      "title": "Guest prep",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-18T14:00:00-05:00",
+      "end": "2026-11-18T14:45:00-05:00"
+    },
+    {
+      "id": "po-004",
+      "uid": "po-004@podcast.example.com",
+      "title": "Podcast recording: Thriving Together",
+      "all_day": false,
+      "location": "Riverside studio",
+      "attendees": [
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-11-18T15:00:00-05:00",
+      "end": "2026-11-18T16:30:00-05:00"
+    },
+    {
+      "id": "po-005",
+      "uid": "po-005@podcast.example.com",
+      "title": "Edit review with Marcus",
+      "all_day": false,
+      "location": "Zoom",
+      "attendees": [
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-11-20T11:00:00-05:00",
+      "end": "2026-11-20T12:00:00-05:00"
+    },
+    {
+      "id": "po-015",
+      "uid": "po-015@podcast.example.com",
+      "title": "Mic test with guest",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-23T18:00:00-05:00",
+      "end": "2026-11-23T19:00:00-05:00"
+    },
+    {
+      "id": "po-006",
+      "uid": "po-006@podcast.example.com",
+      "title": "Guest prep",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-25T14:00:00-05:00",
+      "end": "2026-11-25T14:45:00-05:00"
+    },
+    {
+      "id": "po-007",
+      "uid": "po-007@podcast.example.com",
+      "title": "Podcast recording: Thriving Together",
+      "all_day": false,
+      "location": "Riverside studio",
+      "attendees": [
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-11-25T15:00:00-05:00",
+      "end": "2026-11-25T16:30:00-05:00"
+    },
+    {
+      "id": "po-012",
+      "uid": "launch-episode@thrivingtogether.example.com",
+      "title": "Launch episode planning",
+      "all_day": false,
+      "location": "",
+      "attendees": [
+        "Marcus",
+        "Priya"
+      ],
+      "description": "",
+      "start": "2026-12-01T17:30:00-05:00",
+      "end": "2026-12-01T18:15:00-05:00"
+    },
+    {
+      "id": "po-008",
+      "uid": "po-008@podcast.example.com",
+      "title": "Guest prep",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-12-02T14:00:00-05:00",
+      "end": "2026-12-02T14:45:00-05:00"
+    },
+    {
+      "id": "po-009",
+      "uid": "po-009@podcast.example.com",
+      "title": "Podcast recording: Thriving Together",
+      "all_day": false,
+      "location": "Riverside studio",
+      "attendees": [
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-12-02T15:00:00-05:00",
+      "end": "2026-12-02T16:30:00-05:00"
+    },
+    {
+      "id": "po-016",
+      "uid": "po-016@podcast.example.com",
+      "title": "Guest prep: Dr. Patel",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-12-03T07:00:00-05:00",
+      "end": "2026-12-03T08:00:00-05:00"
+    },
+    {
+      "id": "po-013",
+      "uid": "po-013@podcast.example.com",
+      "title": "Podcast recording: holiday stress special",
+      "all_day": false,
+      "location": "",
+      "attendees": [
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-12-04T10:00:00-05:00",
+      "end": "2026-12-04T11:00:00-05:00"
+    },
+    {
+      "id": "po-010",
+      "uid": "po-010@podcast.example.com",
+      "title": "Edit review with Marcus",
+      "all_day": false,
+      "location": "Zoom",
+      "attendees": [
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-12-04T11:00:00-05:00",
+      "end": "2026-12-04T12:00:00-05:00"
+    }
+  ]
+}

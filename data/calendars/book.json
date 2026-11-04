@@ -1,0 +1,181 @@
+{
+  "calendar": "book",
+  "timezone": "America/New_York",
+  "events": [
+    {
+      "id": "bo-001",
+      "uid": "bo-001@book.example.com",
+      "title": "Writing block: chapter 6",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-11T09:00:00-05:00",
+      "end": "2026-11-11T11:00:00-05:00"
+    },
+    {
+      "id": "bo-012",
+      "uid": "bo-012@book.example.com",
+      "title": "Team Meeting: Intake Process",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-12T16:30:00-05:00",
+      "end": "2026-11-12T17:00:00-05:00"
+    },
+    {
+      "id": "bo-007",
+      "uid": "bo-007@book.example.com",
+      "title": "Back-cover copy approval due",
+      "all_day": true,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-13",
+      "end": "2026-11-14"
+    },
+    {
+      "id": "bo-002",
+      "uid": "bo-002@book.example.com",
+      "title": "Editor call with Priya",
+      "all_day": false,
+      "location": "Zoom",
+      "attendees": [
+        "Priya"
+      ],
+      "description": "",
+      "start": "2026-11-13T13:00:00-05:00",
+      "end": "2026-11-13T13:45:00-05:00"
+    },
+    {
+      "id": "bo-013",
+      "uid": "bo-013@book.example.com",
+      "title": "Interview with Pittsburgh Magazine",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-16T18:00:00-05:00",
+      "end": "2026-11-16T19:00:00-05:00"
+    },
+    {
+      "id": "bo-010",
+      "uid": "launch-planning-1@harborlight.example.com",
+      "title": "Book launch planning",
+      "all_day": false,
+      "location": "",
+      "attendees": [
+        "Priya",
+        "Marcus"
+      ],
+      "description": "",
+      "start": "2026-11-17T17:30:00-05:00",
+      "end": "2026-11-17T18:30:00-05:00"
+    },
+    {
+      "id": "bo-003",
+      "uid": "bo-003@book.example.com",
+      "title": "Writing block: chapter 7",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-18T09:00:00-05:00",
+      "end": "2026-11-18T11:00:00-05:00"
+    },
+    {
+      "id": "bo-008",
+      "uid": "bo-008@book.example.com",
+      "title": "Final manuscript due to Harborlight",
+      "all_day": true,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-20",
+      "end": "2026-11-21"
+    },
+    {
+      "id": "bo-014",
+      "uid": "bo-014@book.example.com",
+      "title": "Cover photo shoot",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-23T18:30:00-05:00",
+      "end": "2026-11-23T20:00:00-05:00"
+    },
+    {
+      "id": "bo-004",
+      "uid": "bo-004@book.example.com",
+      "title": "Writing block: chapter 8",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-25T09:00:00-05:00",
+      "end": "2026-11-25T11:00:00-05:00"
+    },
+    {
+      "id": "bo-005",
+      "uid": "bo-005@book.example.com",
+      "title": "Editor call with Priya",
+      "all_day": false,
+      "location": "Zoom",
+      "attendees": [
+        "Priya"
+      ],
+      "description": "",
+      "start": "2026-11-27T13:00:00-05:00",
+      "end": "2026-11-27T13:45:00-05:00"
+    },
+    {
+      "id": "bo-015",
+      "uid": "bo-015@book.example.com",
+      "title": "Podcast-to-book webinar",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-11-30T18:30:00-05:00",
+      "end": "2026-11-30T20:00:00-05:00"
+    },
+    {
+      "id": "bo-011",
+      "uid": "launch-episode@thrivingtogether.example.com",
+      "title": "Launch episode planning",
+      "all_day": false,
+      "location": "",
+      "attendees": [
+        "Marcus",
+        "Priya"
+      ],
+      "description": "",
+      "start": "2026-12-01T17:30:00-05:00",
+      "end": "2026-12-01T18:15:00-05:00"
+    },
+    {
+      "id": "bo-006",
+      "uid": "bo-006@book.example.com",
+      "title": "Writing block: chapter 9",
+      "all_day": false,
+      "location": "",
+      "attendees": [],
+      "description": "",
+      "start": "2026-12-02T09:00:00-05:00",
+      "end": "2026-12-02T11:00:00-05:00"
+    },
+    {
+      "id": "bo-009",
+      "uid": "bo-009@book.example.com",
+      "title": "Author event: Riverstone Books",
+      "all_day": false,
+      "location": "Riverstone Books",
+      "attendees": [],
+      "description": "",
+      "start": "2026-12-03T18:30:00-05:00",
+      "end": "2026-12-03T20:00:00-05:00"
+    }
+  ]
+}

@@ -1,0 +1,1041 @@
+{
+  "now": "2026-11-09T08:00:00-05:00",
+  "emails": [
+    {
+      "id": "e100",
+      "from_name": "Quinn",
+      "from_email": "quinn.hargrove2@example.net",
+      "to": "monica@example.com",
+      "subject": "Records request",
+      "received_at": "2026-11-09T07:20:00-05:00",
+      "body": "Hello,\n\nI was a client of yours a few years ago and I'd like a copy of my records for a new provider. My name is Quinn Hargrove, date of birth 09/17/1978. Please mail them to 126 Shady Ave, Pittsburgh, PA 15206 or call me at (412) 555-0126.\n\nThank you",
+      "history": []
+    },
+    {
+      "id": "e099",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Episode 42 is live",
+      "received_at": "2026-11-09T05:33:00-05:00",
+      "body": "Uploaded episode 42 and scheduled the social posts. Nothing needed from you!\n\nMarcus",
+      "history": []
+    },
+    {
+      "id": "e098",
+      "from_name": "Dana",
+      "from_email": "dana@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "30-min team sync Thursday?",
+      "received_at": "2026-11-09T04:09:00-05:00",
+      "body": "Hi Monica,\n\nCould you join a 30-minute team sync this Thursday to go over the new intake process? We're aiming for 12:30 or 4:30. Let me know which works.\n\nDana",
+      "history": []
+    },
+    {
+      "id": "e097",
+      "from_name": "CE Learning",
+      "from_email": "promo@celearning.example.com",
+      "to": "monica@example.com",
+      "subject": "6 CE credits: trauma-informed care",
+      "received_at": "2026-11-09T02:25:00-05:00",
+      "body": "Earn 6 CE credits with our self-paced trauma-informed care course. 20% off this week.",
+      "history": []
+    },
+    {
+      "id": "e096",
+      "from_name": "Ben",
+      "from_email": "ben.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Need to reschedule this week",
+      "received_at": "2026-11-09T00:54:00-05:00",
+      "body": "Hi Monica,\n\nI have a work trip and can't make our Tuesday session. Could we move it to Thursday afternoon or sometime Friday morning instead?\n\nThanks,\nBen",
+      "history": []
+    },
+    {
+      "id": "e095",
+      "from_name": "Riverstone Books Events",
+      "from_email": "events@riverstonebooks.example.com",
+      "to": "monica@example.com",
+      "subject": "Bio and headshot for Dec 3 event",
+      "received_at": "2026-11-08T23:00:00-05:00",
+      "body": "Hi Monica,\n\nWe're thrilled to host you at Riverstone Books on December 3. Could you send a 100-word bio and a headshot for the flyer by next Monday? Also let us know if you'd like a table for signing.\n\nWarmly,\nEvents Team",
+      "history": []
+    },
+    {
+      "id": "e094",
+      "from_name": "PodHost",
+      "from_email": "reports@podhost.example.com",
+      "to": "monica@example.com",
+      "subject": "Your weekly podcast stats",
+      "received_at": "2026-11-08T21:32:00-05:00",
+      "body": "Thriving Together had 2227 downloads this week, up 12% from last week. Top episode: 'Anxiety at Night'.",
+      "history": []
+    },
+    {
+      "id": "e093",
+      "from_name": "Claims Department",
+      "from_email": "claims@highmark-plan.example.com",
+      "to": "monica@example.com",
+      "subject": "Claim review: please confirm session code",
+      "received_at": "2026-11-08T19:31:00-05:00",
+      "body": "Dear Provider,\n\nWe are reviewing a claim for a session on 10/27/2026. Please confirm the following for the patient on file:\nMember ID: HPX462759916\nDate of birth: October 20, 1986\nMRN: 7456917\n\nReply to this message to confirm the CPT code (90837 vs 90834) so we can process payment.\n\nClaims Department",
+      "history": []
+    },
+    {
+      "id": "e092",
+      "from_name": "Claims Department",
+      "from_email": "claims@highmark-plan.example.com",
+      "to": "monica@example.com",
+      "subject": "Claim review: please confirm session code",
+      "received_at": "2026-11-08T17:46:00-05:00",
+      "body": "Dear Provider,\n\nWe are reviewing a claim for a session on 10/27/2026. Please confirm the following for the patient on file:\nMember ID: UPM440928433\nDate of birth: 01/07/1992\nMRN: 7117047\n\nReply to this message to confirm the CPT code (90837 vs 90834) so we can process payment.\n\nClaims Department",
+      "history": []
+    },
+    {
+      "id": "e091",
+      "from_name": "Rachel",
+      "from_email": "rachel@guestmail.example.com",
+      "to": "monica@example.com",
+      "subject": "Prep for the episode",
+      "received_at": "2026-11-08T16:03:00-05:00",
+      "body": "Hi Monica,\n\nReally looking forward to being on the show. Could you send over the questions or themes you'd like to cover so I can prepare? Also, should I bring up my own experience with grief or keep it professional?\n\nRachel",
+      "history": []
+    },
+    {
+      "id": "e090",
+      "from_name": "Parent of client",
+      "from_email": "parent.takahashi52@example.net",
+      "to": "monica@example.com",
+      "subject": "Note for school / release form?",
+      "received_at": "2026-11-08T14:21:00-05:00",
+      "body": "Hi Ms. Cwynar,\n\nI'm the parent of Leo Moreno (date of birth 05/15/1975). The school counselor asked whether you can share a short note confirming Leo is in treatment, for the 504 plan meeting. Is that something you can do, and do I need to sign a release first? You can reach me at 724-555-0172.\n\nThank you,\nCasey Okonkwo",
+      "history": []
+    },
+    {
+      "id": "e089",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "45 min next week for copyedits?",
+      "received_at": "2026-11-08T13:04:00-05:00",
+      "body": "Hi Monica,\n\nCan we find 45 minutes next week to go through the copyedits on chapters 6-9? I'm free most afternoons except Wednesday. Send me a couple of times that work for you.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e088",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Episode 42 is live",
+      "received_at": "2026-11-08T11:22:00-05:00",
+      "body": "Uploaded episode 42 and scheduled the social posts. Nothing needed from you!\n\nMarcus",
+      "history": []
+    },
+    {
+      "id": "e087",
+      "from_name": "Riverstone Books Events",
+      "from_email": "events@riverstonebooks.example.com",
+      "to": "monica@example.com",
+      "subject": "Bio and headshot for Dec 3 event",
+      "received_at": "2026-11-08T09:39:00-05:00",
+      "body": "Hi Monica,\n\nWe're thrilled to host you at Riverstone Books on December 3. Could you send a 100-word bio and a headshot for the flyer by next Monday? Also let us know if you'd like a table for signing.\n\nWarmly,\nEvents Team",
+      "history": []
+    },
+    {
+      "id": "e086",
+      "from_name": "Dana",
+      "from_email": "dana@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "30-min team sync Thursday?",
+      "received_at": "2026-11-08T08:13:00-05:00",
+      "body": "Hi Monica,\n\nCould you join a 30-minute team sync this Thursday to go over the new intake process? We're aiming for 12:30 or 4:30. Let me know which works.\n\nDana",
+      "history": []
+    },
+    {
+      "id": "e085",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Back-cover copy: approval needed",
+      "received_at": "2026-11-08T06:28:00-05:00",
+      "body": "Hi Monica,\n\nAttached is the final back-cover copy for *Holding Space*. Marketing needs your sign-off by Thursday end of day so it can go to the printer. Two small changes from last time: we shortened the second paragraph and added the endorsement line. Could you reply with 'approved' or any edits?\n\nBest,\nPriya\nHarborlight Press",
+      "history": [
+        {
+          "from": "monica@example.com",
+          "date": "2026-11-02T19:12:00-05:00",
+          "body": "Hi Priya, the copy looks close. Can we shorten the second paragraph and add Dr. Ellis's endorsement?"
+        }
+      ]
+    },
+    {
+      "id": "e084",
+      "from_name": "Jordan",
+      "from_email": "jordan.okonkwo54@example.net",
+      "to": "monica@example.com",
+      "subject": "Records request",
+      "received_at": "2026-11-08T04:54:00-05:00",
+      "body": "Hello,\n\nI was a client of yours a few years ago and I'd like a copy of my records for a new provider. My name is Jordan Okonkwo, date of birth July 1, 1980. Please mail them to 2579 Forbes Ave, Pittsburgh, PA 15217 or call me at 412-555-0140.\n\nThank you",
+      "history": []
+    },
+    {
+      "id": "e083",
+      "from_name": "Tomas",
+      "from_email": "tomas@guestmail.example.com",
+      "to": "monica@example.com",
+      "subject": "Prep for the episode",
+      "received_at": "2026-11-08T02:55:00-05:00",
+      "body": "Hi Monica,\n\nReally looking forward to being on the show. Could you send over the questions or themes you'd like to cover so I can prepare? Also, should I bring up my own experience with grief or keep it professional?\n\nTomas",
+      "history": []
+    },
+    {
+      "id": "e082",
+      "from_name": "Parent of client",
+      "from_email": "parent.castellano8@example.net",
+      "to": "monica@example.com",
+      "subject": "Note for school / release form?",
+      "received_at": "2026-11-08T01:13:00-05:00",
+      "body": "Hi Ms. Cwynar,\n\nI'm the parent of Mia Moreno (date of birth July 2, 1991). The school counselor asked whether you can share a short note confirming Mia is in treatment, for the 504 plan meeting. Is that something you can do, and do I need to sign a release first? You can reach me at 878-555-0160.\n\nThank you,\nQuinn Lindqvist",
+      "history": []
+    },
+    {
+      "id": "e081",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Hour to review the rough cut?",
+      "received_at": "2026-11-07T23:32:00-05:00",
+      "body": "Hey Monica,\n\nCan we grab an hour sometime this week to review the rough cut of the grief episode? I'm flexible except Friday.\n\nMarcus",
+      "history": [
+        {
+          "from": "monica@example.com",
+          "date": "2026-11-05T21:40:00-05:00",
+          "body": "Sounds good, let's review the rough cut together before it goes out."
+        }
+      ]
+    },
+    {
+      "id": "e080",
+      "from_name": "Ava",
+      "from_email": "ava.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Can we talk sooner?",
+      "received_at": "2026-11-07T22:04:00-05:00",
+      "body": "Hi Monica,\n\nThis week has been really hard and I'm not sure I can wait until our next appointment. Is there any way to talk sooner? I'm safe, I just feel like I'm falling behind again.\n\nAva",
+      "history": []
+    },
+    {
+      "id": "e079",
+      "from_name": "Sofia",
+      "from_email": "sofia.student@university.example.edu",
+      "to": "monica@example.com",
+      "subject": "Recommendation letter request",
+      "received_at": "2026-11-07T20:07:00-05:00",
+      "body": "Hi Monica,\n\nThank you again for supervising my practicum last spring. I'm applying to the MSW advanced-standing program and the letter of recommendation is due December 1. Would you be willing to write one? I can send my resume and the form link.\n\nGratefully,\nSofia",
+      "history": []
+    },
+    {
+      "id": "e078",
+      "from_name": "CE Learning",
+      "from_email": "promo@celearning.example.com",
+      "to": "monica@example.com",
+      "subject": "6 CE credits: trauma-informed care",
+      "received_at": "2026-11-07T18:48:00-05:00",
+      "body": "Earn 6 CE credits with our self-paced trauma-informed care course. 20% off this week.",
+      "history": []
+    },
+    {
+      "id": "e077",
+      "from_name": "Library Programs",
+      "from_email": "programs@library.example.org",
+      "to": "monica@example.com",
+      "subject": "Author talk in December",
+      "received_at": "2026-11-07T16:51:00-05:00",
+      "body": "Dear Monica,\n\nThe Squirrel Hill library would love to host a talk on your book in early December. Would Tuesday December 1 or Thursday December 3 in the evening (6-7:30pm) work?\n\nBest regards,\nAdult Programs",
+      "history": []
+    },
+    {
+      "id": "e076",
+      "from_name": "Devon",
+      "from_email": "devon.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Can we talk sooner?",
+      "received_at": "2026-11-07T14:55:00-05:00",
+      "body": "Hi Monica,\n\nThis week has been really hard and I'm not sure I can wait until our next appointment. Is there any way to talk sooner? I'm safe, I just feel like I'm falling behind again.\n\nDevon",
+      "history": []
+    },
+    {
+      "id": "e075",
+      "from_name": "Avery",
+      "from_email": "avery.kessler82@example.net",
+      "to": "monica@example.com",
+      "subject": "New client - looking for first appointment",
+      "received_at": "2026-11-07T13:20:00-05:00",
+      "body": "Hello,\n\nI was referred by my primary care doctor and I'm looking to start therapy for anxiety. My insurance is Aetna, member ID BCB772757756. I'm available weekday mornings. My phone is (724) 555-0166.\n\nAvery Kessler",
+      "history": []
+    },
+    {
+      "id": "e074",
+      "from_name": "Jen",
+      "from_email": "jen@northsidecounseling.example.com",
+      "to": "monica@example.com",
+      "subject": "Referral question",
+      "received_at": "2026-11-07T11:40:00-05:00",
+      "body": "Hey Monica, hope you're well. A friend is looking for a child therapist who works with selective mutism. Anyone come to mind? No rush, but would love a name or two.\n\nJen",
+      "history": []
+    },
+    {
+      "id": "e073",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Back-cover copy: approval needed",
+      "received_at": "2026-11-07T09:59:00-05:00",
+      "body": "Hi Monica,\n\nAttached is the final back-cover copy for *Holding Space*. Marketing needs your sign-off by Friday so it can go to the printer. Two small changes from last time: we shortened the second paragraph and added the endorsement line. Could you reply with 'approved' or any edits?\n\nBest,\nPriya\nHarborlight Press",
+      "history": [
+        {
+          "from": "monica@example.com",
+          "date": "2026-11-02T19:12:00-05:00",
+          "body": "Hi Priya, the copy looks close. Can we shorten the second paragraph and add Dr. Ellis's endorsement?"
+        }
+      ]
+    },
+    {
+      "id": "e072",
+      "from_name": "Ben",
+      "from_email": "ben.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Question about the worksheet",
+      "received_at": "2026-11-07T08:21:00-05:00",
+      "body": "Hi Monica,\n\nI tried the thought record worksheet this week but I got stuck on the 'evidence against' column. Should I be filling that in right away, or after I've calmed down? I don't want to do it wrong before Thursday.\n\nThanks,\nBen",
+      "history": []
+    },
+    {
+      "id": "e071",
+      "from_name": "Dana",
+      "from_email": "dana@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "Move supervision next week?",
+      "received_at": "2026-11-07T06:48:00-05:00",
+      "body": "Hi Monica,\n\nI have a conflict with our Wednesday supervision at noon next week. Could we push it to 1pm, or would Thursday at noon be better?\n\nDana",
+      "history": []
+    },
+    {
+      "id": "e070",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Pick a title for Wednesday?",
+      "received_at": "2026-11-07T05:06:00-05:00",
+      "body": "Hey!\n\nI need to lock the title for Wednesday's episode tonight. Options:\n1) Grief Isn't a Straight Line\n2) The Waves of Loss\n3) When Grief Shows Up at Work\nWhich one do you like? Mine is #1.\n\nMarcus",
+      "history": []
+    },
+    {
+      "id": "e069",
+      "from_name": "Dr. Patel",
+      "from_email": "guest@speakers.example.com",
+      "to": "monica@example.com",
+      "subject": "Recording date options",
+      "received_at": "2026-11-07T03:21:00-05:00",
+      "body": "Hello Monica,\n\nThanks for the invitation to join Thriving Together! I could record on Nov 18 at 3pm, Nov 20 at 11am, or Dec 2 at 3pm. About an hour works for me. Which is best?\n\nDr. Patel",
+      "history": []
+    },
+    {
+      "id": "e068",
+      "from_name": "Casey",
+      "from_email": "casey.delacroix45@example.net",
+      "to": "monica@example.com",
+      "subject": "New client - looking for first appointment",
+      "received_at": "2026-11-07T01:47:00-05:00",
+      "body": "Hello,\n\nI was referred by my primary care doctor and I'm looking to start therapy for anxiety. My insurance is Aetna, member ID UPM514561048. I'm available weekday mornings. My phone is (412) 555-0161.\n\nCasey Delacroix",
+      "history": []
+    },
+    {
+      "id": "e067",
+      "from_name": "Jen",
+      "from_email": "jen@northsidecounseling.example.com",
+      "to": "monica@example.com",
+      "subject": "Referral question",
+      "received_at": "2026-11-06T23:53:00-05:00",
+      "body": "Hey Monica, hope you're well. A friend is looking for a child therapist who works with selective mutism. Anyone come to mind? No rush, but would love a name or two.\n\nJen",
+      "history": []
+    },
+    {
+      "id": "e066",
+      "from_name": "Thriveworks Clinical Ops",
+      "from_email": "clinical-ops@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "Action required: 4 unsigned progress notes",
+      "received_at": "2026-11-06T22:18:00-05:00",
+      "body": "Hello Monica,\n\nOur records show 4 progress notes from last week are still unsigned. Please sign them in the portal and reply to confirm, or let us know if there is a technical issue. Notes must be signed within 7 days of the session.\n\nThank you,\nClinical Operations",
+      "history": []
+    },
+    {
+      "id": "e065",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Recap of today's call",
+      "received_at": "2026-11-06T20:37:00-05:00",
+      "body": "Thanks for the call. Recap: (1) we keep the current title, (2) chapter 7 moves before chapter 6, (3) final manuscript due Nov 20. I'll send the updated schedule.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e064",
+      "from_name": "PA Society for Clinical Social Work",
+      "from_email": "news@pscsw.example.org",
+      "to": "monica@example.com",
+      "subject": "Legislative update and member news",
+      "received_at": "2026-11-06T18:53:00-05:00",
+      "body": "Updates on telehealth licensure compacts, plus our winter conference call for proposals.",
+      "history": []
+    },
+    {
+      "id": "e063",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "45 min next week for copyedits?",
+      "received_at": "2026-11-06T17:42:00-05:00",
+      "body": "Hi Monica,\n\nCan we find 45 minutes next week to go through the copyedits on chapters 6-9? I'm free most afternoons except Wednesday. Send me a couple of times that work for you.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e062",
+      "from_name": "Library Programs",
+      "from_email": "programs@library.example.org",
+      "to": "monica@example.com",
+      "subject": "Author talk in December",
+      "received_at": "2026-11-06T16:06:00-05:00",
+      "body": "Dear Monica,\n\nThe Squirrel Hill library would love to host a talk on your book in early December. Would Tuesday December 1 or Thursday December 3 in the evening (6-7:30pm) work?\n\nBest regards,\nAdult Programs",
+      "history": []
+    },
+    {
+      "id": "e061",
+      "from_name": "Dr. Patel",
+      "from_email": "guest@speakers.example.com",
+      "to": "monica@example.com",
+      "subject": "Recording date options",
+      "received_at": "2026-11-06T14:27:00-05:00",
+      "body": "Hello Monica,\n\nThanks for the invitation to join Thriving Together! I could record on Nov 18 at 3pm, Nov 20 at 11am, or Dec 2 at 3pm. About an hour works for me. Which is best?\n\nDr. Patel",
+      "history": []
+    },
+    {
+      "id": "e060",
+      "from_name": "Zoom",
+      "from_email": "billing@vendor.example.com",
+      "to": "monica@example.com",
+      "subject": "Your Zoom receipt",
+      "received_at": "2026-11-06T12:51:00-05:00",
+      "body": "Thanks for your payment of $23.00 for your monthly Zoom plan.",
+      "history": []
+    },
+    {
+      "id": "e059",
+      "from_name": "Carla",
+      "from_email": "carla.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Need to reschedule this week",
+      "received_at": "2026-11-06T10:35:00-05:00",
+      "body": "Hi Monica,\n\nI have a work trip and can't make our Tuesday session. Could we move it to Thursday afternoon or sometime Friday morning instead?\n\nThanks,\nCarla",
+      "history": []
+    },
+    {
+      "id": "e058",
+      "from_name": "Claims Department",
+      "from_email": "claims@highmark-plan.example.com",
+      "to": "monica@example.com",
+      "subject": "Payment processed",
+      "received_at": "2026-11-06T09:29:00-05:00",
+      "body": "Payment processed for patient Jordan Moreno (Member ID UPM136626339), session 10/20/2026. Amount: $112.40. This is an automated notice.",
+      "history": []
+    },
+    {
+      "id": "e057",
+      "from_name": "Riley",
+      "from_email": "riley.kessler53@example.net",
+      "to": "monica@example.com",
+      "subject": "New client - looking for first appointment",
+      "received_at": "2026-11-06T07:48:00-05:00",
+      "body": "Hello,\n\nI was referred by my primary care doctor and I'm looking to start therapy for anxiety. My insurance is Aetna, member ID HPX758497901. I'm available weekday mornings. My phone is 724.555.0106.\n\nRiley Kessler",
+      "history": []
+    },
+    {
+      "id": "e056",
+      "from_name": "Calendar",
+      "from_email": "calendar-notification@example.com",
+      "to": "monica@example.com",
+      "subject": "Accepted: meeting with Dana",
+      "received_at": "2026-11-06T06:02:00-05:00",
+      "body": "Dana has accepted your invitation.",
+      "history": []
+    },
+    {
+      "id": "e055",
+      "from_name": "Claims Department",
+      "from_email": "claims@highmark-plan.example.com",
+      "to": "monica@example.com",
+      "subject": "Payment processed",
+      "received_at": "2026-11-06T04:27:00-05:00",
+      "body": "Payment processed for patient Casey Lindqvist (Member ID AET983820029), session 10/20/2026. Amount: $112.40. This is an automated notice.",
+      "history": []
+    },
+    {
+      "id": "e054",
+      "from_name": "Ava",
+      "from_email": "ava.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Quick question before our next session",
+      "received_at": "2026-11-06T02:25:00-05:00",
+      "body": "Hi Monica,\n\nI tried the thought record worksheet this week but I got stuck on the 'evidence against' column. Should I be filling that in right away, or after I've calmed down? I don't want to do it wrong before Thursday.\n\nThanks,\nAva",
+      "history": []
+    },
+    {
+      "id": "e053",
+      "from_name": "Calendar",
+      "from_email": "calendar-notification@example.com",
+      "to": "monica@example.com",
+      "subject": "Accepted: meeting with Priya",
+      "received_at": "2026-11-06T01:01:00-05:00",
+      "body": "Priya has accepted your invitation.",
+      "history": []
+    },
+    {
+      "id": "e052",
+      "from_name": "Hector",
+      "from_email": "hector.client@example.org",
+      "to": "monica@example.com",
+      "subject": "See you Tuesday",
+      "received_at": "2026-11-05T23:19:00-05:00",
+      "body": "Hi Monica, just confirming I'll see you Tuesday at the usual time. Thanks!\nHector",
+      "history": []
+    },
+    {
+      "id": "e051",
+      "from_name": "A listener",
+      "from_email": "listener@example.net",
+      "to": "monica@example.com",
+      "subject": "Thank you for the grief episode",
+      "received_at": "2026-11-05T21:16:00-05:00",
+      "body": "I just wanted to say your episode on grief helped me get through my mom's anniversary. Thank you.",
+      "history": []
+    },
+    {
+      "id": "e050",
+      "from_name": "A listener",
+      "from_email": "listener@example.net",
+      "to": "monica@example.com",
+      "subject": "Thank you for the grief episode",
+      "received_at": "2026-11-05T19:36:00-05:00",
+      "body": "I just wanted to say your episode on grief helped me get through my mom's anniversary. Thank you.",
+      "history": []
+    },
+    {
+      "id": "e049",
+      "from_name": "PA Society for Clinical Social Work",
+      "from_email": "news@pscsw.example.org",
+      "to": "monica@example.com",
+      "subject": "Legislative update and member news",
+      "received_at": "2026-11-05T17:57:00-05:00",
+      "body": "Updates on telehealth licensure compacts, plus our winter conference call for proposals.",
+      "history": []
+    },
+    {
+      "id": "e048",
+      "from_name": "PodHost",
+      "from_email": "reports@podhost.example.com",
+      "to": "monica@example.com",
+      "subject": "Your weekly podcast stats",
+      "received_at": "2026-11-05T16:23:00-05:00",
+      "body": "Thriving Together had 931 downloads this week, up 12% from last week. Top episode: 'Anxiety at Night'.",
+      "history": []
+    },
+    {
+      "id": "e047",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Back-cover copy: approval needed",
+      "received_at": "2026-11-05T14:48:00-05:00",
+      "body": "Hi Monica,\n\nAttached is the final back-cover copy for *Holding Space*. Marketing needs your sign-off by November 13 so it can go to the printer. Two small changes from last time: we shortened the second paragraph and added the endorsement line. Could you reply with 'approved' or any edits?\n\nBest,\nPriya\nHarborlight Press",
+      "history": [
+        {
+          "from": "monica@example.com",
+          "date": "2026-11-02T19:12:00-05:00",
+          "body": "Hi Priya, the copy looks close. Can we shorten the second paragraph and add Dr. Ellis's endorsement?"
+        }
+      ]
+    },
+    {
+      "id": "e046",
+      "from_name": "Riverstone Books Events",
+      "from_email": "events@riverstonebooks.example.com",
+      "to": "monica@example.com",
+      "subject": "Bio and headshot for Dec 3 event",
+      "received_at": "2026-11-05T13:25:00-05:00",
+      "body": "Hi Monica,\n\nWe're thrilled to host you at Riverstone Books on December 3. Could you send a 100-word bio and a headshot for the flyer by next Monday? Also let us know if you'd like a table for signing.\n\nWarmly,\nEvents Team",
+      "history": []
+    },
+    {
+      "id": "e045",
+      "from_name": "A listener",
+      "from_email": "listener@example.net",
+      "to": "monica@example.com",
+      "subject": "Thank you for the grief episode",
+      "received_at": "2026-11-05T11:13:00-05:00",
+      "body": "I just wanted to say your episode on grief helped me get through my mom's anniversary. Thank you.",
+      "history": []
+    },
+    {
+      "id": "e044",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Pick a title for Wednesday?",
+      "received_at": "2026-11-05T10:02:00-05:00",
+      "body": "Hey!\n\nI need to lock the title for Wednesday's episode tonight. Options:\n1) Grief Isn't a Straight Line\n2) The Waves of Loss\n3) When Grief Shows Up at Work\nWhich one do you like? Mine is #1.\n\nMarcus",
+      "history": []
+    },
+    {
+      "id": "e043",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Pick a title for Wednesday?",
+      "received_at": "2026-11-05T08:21:00-05:00",
+      "body": "Hey!\n\nI need to lock the title for Wednesday's episode tonight. Options:\n1) Grief Isn't a Straight Line\n2) The Waves of Loss\n3) When Grief Shows Up at Work\nWhich one do you like? Mine is #1.\n\nMarcus",
+      "history": []
+    },
+    {
+      "id": "e042",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Proofs are on their way",
+      "received_at": "2026-11-05T06:41:00-05:00",
+      "body": "Hi Monica, just a heads-up that the printed proofs shipped today and should arrive by Thursday. Nothing needed from you until they arrive.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e041",
+      "from_name": "CE Learning",
+      "from_email": "promo@celearning.example.com",
+      "to": "monica@example.com",
+      "subject": "6 CE credits: trauma-informed care",
+      "received_at": "2026-11-05T04:47:00-05:00",
+      "body": "Earn 6 CE credits with our self-paced trauma-informed care course. 20% off this week.",
+      "history": []
+    },
+    {
+      "id": "e040",
+      "from_name": "Thriveworks",
+      "from_email": "news@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "November provider newsletter",
+      "received_at": "2026-11-05T03:22:00-05:00",
+      "body": "This month: updated telehealth guidelines, a new CE course on grief, and holiday office hours. No action is needed.",
+      "history": []
+    },
+    {
+      "id": "e039",
+      "from_name": "Parent of client",
+      "from_email": "parent.novak75@example.net",
+      "to": "monica@example.com",
+      "subject": "Note for school / release form?",
+      "received_at": "2026-11-05T01:34:00-05:00",
+      "body": "Hi Ms. Cwynar,\n\nI'm the parent of Zoe Moreno (date of birth September 16, 1969). The school counselor asked whether you can share a short note confirming Zoe is in treatment, for the 504 plan meeting. Is that something you can do, and do I need to sign a release first? You can reach me at 412.555.0133.\n\nThank you,\nAvery Kessler",
+      "history": []
+    },
+    {
+      "id": "e038",
+      "from_name": "Jamal",
+      "from_email": "jamal.client@example.org",
+      "to": "monica@example.com",
+      "subject": "See you Tuesday",
+      "received_at": "2026-11-05T00:02:00-05:00",
+      "body": "Hi Monica, just confirming I'll see you Tuesday at the usual time. Thanks!\nJamal",
+      "history": []
+    },
+    {
+      "id": "e037",
+      "from_name": "Dr. Patel",
+      "from_email": "guest@speakers.example.com",
+      "to": "monica@example.com",
+      "subject": "Recording date options",
+      "received_at": "2026-11-04T22:16:00-05:00",
+      "body": "Hello Monica,\n\nThanks for the invitation to join Thriving Together! I could record on Nov 18 at 3pm, Nov 20 at 11am, or Dec 2 at 3pm. About an hour works for me. Which is best?\n\nDr. Patel",
+      "history": []
+    },
+    {
+      "id": "e036",
+      "from_name": "Dana",
+      "from_email": "dana@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "Move supervision next week?",
+      "received_at": "2026-11-04T20:18:00-05:00",
+      "body": "Hi Monica,\n\nI have a conflict with our Wednesday supervision at noon next week. Could we push it to 1pm, or would Thursday at noon be better?\n\nDana",
+      "history": []
+    },
+    {
+      "id": "e035",
+      "from_name": "Taylor",
+      "from_email": "taylor.delacroix2@example.net",
+      "to": "monica@example.com",
+      "subject": "Records request",
+      "received_at": "2026-11-04T18:39:00-05:00",
+      "body": "Hello,\n\nI was a client of yours a few years ago and I'd like a copy of my records for a new provider. My name is Taylor Delacroix, date of birth 02/02/1980. Please mail them to 1151 Walnut St, Pittsburgh, PA 15201 or call me at (412) 555-0110.\n\nThank you",
+      "history": []
+    },
+    {
+      "id": "e034",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Proofs are on their way",
+      "received_at": "2026-11-04T17:24:00-05:00",
+      "body": "Hi Monica, just a heads-up that the printed proofs shipped today and should arrive by Thursday. Nothing needed from you until they arrive.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e033",
+      "from_name": "Tomas",
+      "from_email": "tomas@guestmail.example.com",
+      "to": "monica@example.com",
+      "subject": "Prep for the episode",
+      "received_at": "2026-11-04T15:23:00-05:00",
+      "body": "Hi Monica,\n\nReally looking forward to being on the show. Could you send over the questions or themes you'd like to cover so I can prepare? Also, should I bring up my own experience with grief or keep it professional?\n\nTomas",
+      "history": []
+    },
+    {
+      "id": "e032",
+      "from_name": "Thriveworks",
+      "from_email": "news@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "November provider newsletter",
+      "received_at": "2026-11-04T14:03:00-05:00",
+      "body": "This month: updated telehealth guidelines, a new CE course on grief, and holiday office hours. No action is needed.",
+      "history": []
+    },
+    {
+      "id": "e031",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "45 min next week for copyedits?",
+      "received_at": "2026-11-04T12:10:00-05:00",
+      "body": "Hi Monica,\n\nCan we find 45 minutes next week to go through the copyedits on chapters 6-9? I'm free most afternoons except Wednesday. Send me a couple of times that work for you.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e030",
+      "from_name": "PodHost",
+      "from_email": "reports@podhost.example.com",
+      "to": "monica@example.com",
+      "subject": "Your weekly podcast stats",
+      "received_at": "2026-11-04T10:41:00-05:00",
+      "body": "Thriving Together had 2241 downloads this week, up 12% from last week. Top episode: 'Anxiety at Night'.",
+      "history": []
+    },
+    {
+      "id": "e029",
+      "from_name": "Jordan",
+      "from_email": "jordan.hargrove58@example.net",
+      "to": "monica@example.com",
+      "subject": "New client - looking for first appointment",
+      "received_at": "2026-11-04T08:34:00-05:00",
+      "body": "Hello,\n\nI was referred by my primary care doctor and I'm looking to start therapy for anxiety. My insurance is Aetna, member ID AET847311615. I'm available weekday mornings. My phone is (724) 555-0115.\n\nJordan Hargrove",
+      "history": []
+    },
+    {
+      "id": "e028",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Pick a title for Wednesday?",
+      "received_at": "2026-11-04T06:53:00-05:00",
+      "body": "Hey!\n\nI need to lock the title for Wednesday's episode tonight. Options:\n1) Grief Isn't a Straight Line\n2) The Waves of Loss\n3) When Grief Shows Up at Work\nWhich one do you like? Mine is #1.\n\nMarcus",
+      "history": []
+    },
+    {
+      "id": "e027",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Hour to review the rough cut?",
+      "received_at": "2026-11-04T05:22:00-05:00",
+      "body": "Hey Monica,\n\nCan we grab an hour sometime this week to review the rough cut of the grief episode? I'm flexible except Friday.\n\nMarcus",
+      "history": [
+        {
+          "from": "monica@example.com",
+          "date": "2026-11-05T21:40:00-05:00",
+          "body": "Sounds good, let's review the rough cut together before it goes out."
+        }
+      ]
+    },
+    {
+      "id": "e026",
+      "from_name": "Hector",
+      "from_email": "hector.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Can we talk sooner?",
+      "received_at": "2026-11-04T04:00:00-05:00",
+      "body": "Hi Monica,\n\nThis week has been really hard and I'm not sure I can wait until our next appointment. Is there any way to talk sooner? I'm safe, I just feel like I'm falling behind again.\n\nHector",
+      "history": []
+    },
+    {
+      "id": "e025",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Recap of today's call",
+      "received_at": "2026-11-04T01:54:00-05:00",
+      "body": "Thanks for the call. Recap: (1) we keep the current title, (2) chapter 7 moves before chapter 6, (3) final manuscript due Nov 20. I'll send the updated schedule.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e024",
+      "from_name": "Dana",
+      "from_email": "dana@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "Move supervision next week?",
+      "received_at": "2026-11-04T00:22:00-05:00",
+      "body": "Hi Monica,\n\nI have a conflict with our Wednesday supervision at noon next week. Could we push it to 1pm, or would Thursday at noon be better?\n\nDana",
+      "history": []
+    },
+    {
+      "id": "e023",
+      "from_name": "Claims Department",
+      "from_email": "claims@highmark-plan.example.com",
+      "to": "monica@example.com",
+      "subject": "Claim review: please confirm session code",
+      "received_at": "2026-11-03T22:46:00-05:00",
+      "body": "Dear Provider,\n\nWe are reviewing a claim for a session on 10/27/2026. Please confirm the following for the patient on file:\nMember ID: HPX165402377\nDate of birth: 04/26/1986\nMRN: 1248200\n\nReply to this message to confirm the CPT code (90837 vs 90834) so we can process payment.\n\nClaims Department",
+      "history": []
+    },
+    {
+      "id": "e022",
+      "from_name": "Jamal",
+      "from_email": "jamal.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Need to reschedule this week",
+      "received_at": "2026-11-03T20:44:00-05:00",
+      "body": "Hi Monica,\n\nI have a work trip and can't make our Tuesday session. Could we move it to Thursday afternoon or sometime Friday morning instead?\n\nThanks,\nJamal",
+      "history": []
+    },
+    {
+      "id": "e021",
+      "from_name": "Library Programs",
+      "from_email": "programs@library.example.org",
+      "to": "monica@example.com",
+      "subject": "Author talk in December",
+      "received_at": "2026-11-03T19:11:00-05:00",
+      "body": "Dear Monica,\n\nThe Squirrel Hill library would love to host a talk on your book in early December. Would Tuesday December 1 or Thursday December 3 in the evening (6-7:30pm) work?\n\nBest regards,\nAdult Programs",
+      "history": []
+    },
+    {
+      "id": "e020",
+      "from_name": "PA Society for Clinical Social Work",
+      "from_email": "news@pscsw.example.org",
+      "to": "monica@example.com",
+      "subject": "Legislative update and member news",
+      "received_at": "2026-11-03T17:34:00-05:00",
+      "body": "Updates on telehealth licensure compacts, plus our winter conference call for proposals.",
+      "history": []
+    },
+    {
+      "id": "e019",
+      "from_name": "Rabbi Stern",
+      "from_email": "guest@speakers.example.com",
+      "to": "monica@example.com",
+      "subject": "Recording date options",
+      "received_at": "2026-11-03T15:59:00-05:00",
+      "body": "Hello Monica,\n\nThanks for the invitation to join Thriving Together! I could record on Nov 18 at 3pm, Nov 20 at 11am, or Dec 2 at 3pm. About an hour works for me. Which is best?\n\nRabbi Stern",
+      "history": []
+    },
+    {
+      "id": "e018",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Episode 42 is live",
+      "received_at": "2026-11-03T14:06:00-05:00",
+      "body": "Uploaded episode 42 and scheduled the social posts. Nothing needed from you!\n\nMarcus",
+      "history": []
+    },
+    {
+      "id": "e017",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Proofs are on their way",
+      "received_at": "2026-11-03T12:24:00-05:00",
+      "body": "Hi Monica, just a heads-up that the printed proofs shipped today and should arrive by Thursday. Nothing needed from you until they arrive.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e016",
+      "from_name": "Riverside.fm",
+      "from_email": "billing@vendor.example.com",
+      "to": "monica@example.com",
+      "subject": "Your Riverside.fm receipt",
+      "received_at": "2026-11-03T10:59:00-05:00",
+      "body": "Thanks for your payment of $17.00 for your monthly Riverside.fm plan.",
+      "history": []
+    },
+    {
+      "id": "e015",
+      "from_name": "Avery",
+      "from_email": "avery.lindqvist48@example.net",
+      "to": "monica@example.com",
+      "subject": "Records request",
+      "received_at": "2026-11-03T09:11:00-05:00",
+      "body": "Hello,\n\nI was a client of yours a few years ago and I'd like a copy of my records for a new provider. My name is Avery Lindqvist, date of birth 12/03/1994. Please mail them to 1991 Forbes Ave, Pittsburgh, PA 15222 or call me at 878-555-0165.\n\nThank you",
+      "history": []
+    },
+    {
+      "id": "e014",
+      "from_name": "Jen",
+      "from_email": "jen@northsidecounseling.example.com",
+      "to": "monica@example.com",
+      "subject": "Referral question",
+      "received_at": "2026-11-03T07:44:00-05:00",
+      "body": "Hey Monica, hope you're well. A friend is looking for a child therapist who works with selective mutism. Anyone come to mind? No rush, but would love a name or two.\n\nJen",
+      "history": []
+    },
+    {
+      "id": "e013",
+      "from_name": "Sofia",
+      "from_email": "sofia.student@university.example.edu",
+      "to": "monica@example.com",
+      "subject": "Recommendation letter request",
+      "received_at": "2026-11-03T06:09:00-05:00",
+      "body": "Hi Monica,\n\nThank you again for supervising my practicum last spring. I'm applying to the MSW advanced-standing program and the letter of recommendation is due December 1. Would you be willing to write one? I can send my resume and the form link.\n\nGratefully,\nSofia",
+      "history": []
+    },
+    {
+      "id": "e012",
+      "from_name": "Ava",
+      "from_email": "ava.client@example.org",
+      "to": "monica@example.com",
+      "subject": "Quick question before our next session",
+      "received_at": "2026-11-03T04:37:00-05:00",
+      "body": "Hi Monica,\n\nI tried the thought record worksheet this week but I got stuck on the 'evidence against' column. Should I be filling that in right away, or after I've calmed down? I don't want to do it wrong before Thursday.\n\nThanks,\nAva",
+      "history": []
+    },
+    {
+      "id": "e011",
+      "from_name": "Dana",
+      "from_email": "dana@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "30-min team sync Thursday?",
+      "received_at": "2026-11-03T02:55:00-05:00",
+      "body": "Hi Monica,\n\nCould you join a 30-minute team sync this Thursday to go over the new intake process? We're aiming for 12:30 or 4:30. Let me know which works.\n\nDana",
+      "history": []
+    },
+    {
+      "id": "e010",
+      "from_name": "Thriveworks Clinical Ops",
+      "from_email": "clinical-ops@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "Action required: 4 unsigned progress notes",
+      "received_at": "2026-11-03T00:48:00-05:00",
+      "body": "Hello Monica,\n\nOur records show 4 progress notes from last week are still unsigned. Please sign them in the portal and reply to confirm, or let us know if there is a technical issue. Notes must be signed within 7 days of the session.\n\nThank you,\nClinical Operations",
+      "history": []
+    },
+    {
+      "id": "e009",
+      "from_name": "Thriveworks Clinical Ops",
+      "from_email": "clinical-ops@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "Action required: 2 unsigned progress notes",
+      "received_at": "2026-11-02T23:20:00-05:00",
+      "body": "Hello Monica,\n\nOur records show 2 progress notes from last week are still unsigned. Please sign them in the portal and reply to confirm, or let us know if there is a technical issue. Notes must be signed within 7 days of the session.\n\nThank you,\nClinical Operations",
+      "history": []
+    },
+    {
+      "id": "e008",
+      "from_name": "Elena",
+      "from_email": "elena.client@example.org",
+      "to": "monica@example.com",
+      "subject": "See you Tuesday",
+      "received_at": "2026-11-02T21:41:00-05:00",
+      "body": "Hi Monica, just confirming I'll see you Tuesday at the usual time. Thanks!\nElena",
+      "history": []
+    },
+    {
+      "id": "e007",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "Recap of today's call",
+      "received_at": "2026-11-02T20:09:00-05:00",
+      "body": "Thanks for the call. Recap: (1) we keep the current title, (2) chapter 7 moves before chapter 6, (3) final manuscript due Nov 20. I'll send the updated schedule.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e006",
+      "from_name": "Priya",
+      "from_email": "priya@harborlight-press.example.com",
+      "to": "monica@example.com",
+      "subject": "45 min next week for copyedits?",
+      "received_at": "2026-11-02T18:15:00-05:00",
+      "body": "Hi Monica,\n\nCan we find 45 minutes next week to go through the copyedits on chapters 6-9? I'm free most afternoons except Wednesday. Send me a couple of times that work for you.\n\nPriya",
+      "history": []
+    },
+    {
+      "id": "e005",
+      "from_name": "Marcus",
+      "from_email": "marcus@thrivingtogetherpod.example.com",
+      "to": "monica@example.com",
+      "subject": "Hour to review the rough cut?",
+      "received_at": "2026-11-02T16:34:00-05:00",
+      "body": "Hey Monica,\n\nCan we grab an hour sometime this week to review the rough cut of the grief episode? I'm flexible except Friday.\n\nMarcus",
+      "history": [
+        {
+          "from": "monica@example.com",
+          "date": "2026-11-05T21:40:00-05:00",
+          "body": "Sounds good, let's review the rough cut together before it goes out."
+        }
+      ]
+    },
+    {
+      "id": "e004",
+      "from_name": "Zoom",
+      "from_email": "billing@vendor.example.com",
+      "to": "monica@example.com",
+      "subject": "Your Zoom receipt",
+      "received_at": "2026-11-02T14:47:00-05:00",
+      "body": "Thanks for your payment of $25.00 for your monthly Zoom plan.",
+      "history": []
+    },
+    {
+      "id": "e003",
+      "from_name": "Thriveworks",
+      "from_email": "news@thriveworks.example.com",
+      "to": "monica@example.com",
+      "subject": "November provider newsletter",
+      "received_at": "2026-11-02T13:21:00-05:00",
+      "body": "This month: updated telehealth guidelines, a new CE course on grief, and holiday office hours. No action is needed.",
+      "history": []
+    },
+    {
+      "id": "e002",
+      "from_name": "Claims Department",
+      "from_email": "claims@highmark-plan.example.com",
+      "to": "monica@example.com",
+      "subject": "Payment processed",
+      "received_at": "2026-11-02T11:58:00-05:00",
+      "body": "Payment processed for patient Taylor Hargrove (Member ID HPX506888275), session 10/20/2026. Amount: $112.40. This is an automated notice.",
+      "history": []
+    },
+    {
+      "id": "e001",
+      "from_name": "Sofia",
+      "from_email": "sofia.student@university.example.edu",
+      "to": "monica@example.com",
+      "subject": "Recommendation letter request",
+      "received_at": "2026-11-02T09:52:00-05:00",
+      "body": "Hi Monica,\n\nThank you again for supervising my practicum last spring. I'm applying to the MSW advanced-standing program and the letter of recommendation is due December 1. Would you be willing to write one? I can send my resume and the form link.\n\nGratefully,\nSofia",
+      "history": []
+    }
+  ]
+}
