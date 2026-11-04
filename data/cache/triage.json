@@ -1,0 +1,502 @@
+{
+  "e095": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Riverstone Books needs a 100-word bio, a headshot, and your answer about a signing table by next Monday, which is a week away."
+  },
+  "e098": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dana is asking you to pick between 12:30 or 4:30 on Thursday for a 30-minute team sync on the new intake process."
+  },
+  "e099": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Marcus is just letting you know episode 42 is uploaded and the social posts are scheduled, and he says nothing is needed from you."
+  },
+  "e097": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is a promotional email for a continuing education course with a discount, so no reply is needed."
+  },
+  "e100": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Quinn is asking for a copy of their records for a new provider, which needs your follow-up and a signed release before anything is sent; there is no stated deadline."
+  },
+  "e094": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is an automatic weekly stats update for Thriving Together (downloads are up 12%), and no reply is needed."
+  },
+  "e096": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Ben can't make Tuesday's session because of a work trip and is asking to move it to Thursday afternoon or Friday morning."
+  },
+  "e093": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "The Claims Department is asking you to confirm which session code (90837 or 90834) applies so they can process payment, but there is no stated deadline. Please don't reply with any patient details yet; it's worth checking this request is genuine, since it asks for client information by email."
+  },
+  "e092": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "The claims department wants you to confirm the session code (90837 or 90834) so they can process payment, but no deadline was given. Please be careful: this message asks for patient details, so check it is genuine and don't share client information by email until you have verified the sender."
+  },
+  "e089": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Priya wants to set up a 45-minute call next week for copyedits on chapters 6-9 and asks you to send a couple of afternoon times."
+  },
+  "e087": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Riverstone Books needs a 100-word bio, a headshot, and your answer on a signing table by next Monday (Nov 16), which is more than two business days away."
+  },
+  "e086": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dana wants you to pick between 12:30 and 4:30 this Thursday for a 30-minute team sync on the new intake process."
+  },
+  "e090": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "A parent is asking whether you can provide a note for Leo's school 504 plan meeting and whether a signed release is needed first; no meeting date or deadline was given, so it isn't urgent."
+  },
+  "e091": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Rachel, your upcoming podcast guest, is asking you to send the questions or themes and to tell her whether to share her own grief experience; she gave no deadline."
+  },
+  "e085": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Priya needs you to reply 'approved' or send edits on the back-cover copy for Holding Space by end of day Thursday, which is more than two business days away."
+  },
+  "e084": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Jordan is asking for a copy of their records for a new provider, which needs your follow-up (a signed release is usually needed) and no deadline or crisis is mentioned."
+  },
+  "e088": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Marcus let you know episode 42 is uploaded and the social posts are scheduled, and he says nothing is needed from you."
+  },
+  "e083": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Tomas, a guest on the podcast, is asking you to send the episode questions or themes and to say whether he should share his own experience with grief, and he gave no deadline."
+  },
+  "e081": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Marcus wants to find an hour this week (any day but Friday) to review the grief episode rough cut together, with no stated deadline."
+  },
+  "e080": {
+    "category": "scheduling",
+    "urgent": true,
+    "reason": "Ava is having a hard week, says she is safe, and is asking to talk sooner than her next appointment, so she needs an earlier time soon."
+  },
+  "e082": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "A parent is asking whether you can provide a note for the school's 504 plan meeting and whether a signed release is needed, so a reply is needed, but no deadline or crisis was mentioned and the meeting date is unknown."
+  },
+  "e078": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is a promotional email for a continuing education course with a discount, and it doesn't need a reply."
+  },
+  "e077": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "The Squirrel Hill library wants you to pick between Tuesday, December 1 or Thursday, December 3 (6-7:30pm) for an author talk, and there is no near-term deadline."
+  },
+  "e074": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Jen is asking if you can recommend a child therapist who works with selective mutism for her friend, and she said there's no rush."
+  },
+  "e079": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Sofia is asking if you'd be willing to write a recommendation letter due December 1, so she needs a yes or no from you, but the deadline is weeks away."
+  },
+  "e076": {
+    "category": "scheduling",
+    "urgent": true,
+    "reason": "Devon is having a hard week and is asking to talk sooner than the next appointment; they say they're safe, but a client wanting an earlier time is urgent, and the message was sent over the weekend."
+  },
+  "e075": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Avery, a new prospective client, is asking to book a first appointment and says weekday mornings work; nothing suggests a crisis or a deadline."
+  },
+  "e073": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Priya needs you to reply 'approved' or send edits on the back-cover copy for Holding Space by Friday, which is more than two business days away."
+  },
+  "e072": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Ben is asking you a question about when to fill in the 'evidence against' column of his worksheet, and he'd like an answer before Thursday, which is more than two business days away."
+  },
+  "e071": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dana wants to move next Wednesday's noon supervision and is asking whether you prefer 1pm that day or Thursday at noon."
+  },
+  "e067": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Jen is asking if you can suggest a child therapist who works with selective mutism for her friend, and she said there's no rush."
+  },
+  "e069": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dr. Patel offered three recording times for Thriving Together and wants you to pick one; the earliest is Nov 18, more than two business days away."
+  },
+  "e068": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Casey, a prospective new client, wants a first appointment on weekday mornings, so the main ask is to find a time; nothing suggests a crisis or a tight deadline."
+  },
+  "e070": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Marcus is asking you to choose a title for Wednesday's episode, and he said he needed to lock it in last night, so it's time-sensitive."
+  },
+  "e065": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Priya is recapping decisions you already made on your call and will send the updated schedule, so no reply is needed."
+  },
+  "e066": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Thriveworks needs you to sign 4 progress notes in the portal and reply to confirm; notes are due within 7 days of each session, so the deadline is likely here or very close."
+  },
+  "e064": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is a member newsletter from the PA Society for Clinical Social Work with legislative news and a conference call for proposals, and it doesn't need a reply."
+  },
+  "e063": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Priya wants to set up a 45-minute call next week to go over copyedits and asks you to send a couple of afternoon times that work."
+  },
+  "e061": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dr. Patel offered three recording times for Thriving Together (Nov 18, Nov 20, or Dec 2) and wants you to pick one."
+  },
+  "e062": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "The Squirrel Hill library is asking you to pick between Tuesday December 1 or Thursday December 3 (evening) for an author talk, and there's no deadline within the next two business days."
+  },
+  "e059": {
+    "category": "scheduling",
+    "urgent": true,
+    "reason": "Carla is asking to move her Tuesday session (tomorrow) to Thursday afternoon or Friday morning, so she needs an answer soon."
+  },
+  "e060": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is just a Zoom receipt for your $23.00 monthly plan, so there's nothing for you to do."
+  },
+  "e058": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is an automatic notice from the claims department saying a payment of $112.40 was processed, so no reply is needed."
+  },
+  "e057": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Riley, a new prospective client referred by their doctor, is asking for a first appointment and is available weekday mornings; there is no sign of crisis or a hard deadline."
+  },
+  "e055": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is an automated notice that a $112.40 insurance payment was processed, so nothing is needed from you."
+  },
+  "e056": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Dana accepted your meeting invitation, so it's confirmed and nothing more is needed from you."
+  },
+  "e054": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Ava is asking whether to fill in the 'evidence against' column right away or after calming down, and would like an answer before her Thursday session, which is a few days away."
+  },
+  "e052": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Hector is just confirming your usual Tuesday time, so nothing needs a reply."
+  },
+  "e051": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "A listener sent a thank-you note about your grief episode, and it doesn't ask for anything back."
+  },
+  "e050": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "A listener sent a thank-you note about your grief episode, and no reply is needed."
+  },
+  "e049": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is a membership newsletter from the PA Society for Clinical Social Work with legislative news and a call for conference proposals, and it doesn't need a reply."
+  },
+  "e053": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is an automatic notice that Priya accepted your meeting invitation, so nothing more is needed from you."
+  },
+  "e048": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is an automatic weekly stats report from your podcast host, so no reply is needed."
+  },
+  "e047": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Priya needs you to reply 'approved' or send edits on the back-cover copy for Holding Space by Friday, November 13, so it can go to the printer."
+  },
+  "e045": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "A listener sent a thank-you note about your grief episode and isn't asking for anything, so no reply is needed."
+  },
+  "e046": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Riverstone Books needs your 100-word bio and a headshot for the flyer by next Monday (Nov 16), and wants to know if you'd like a signing table."
+  },
+  "e042": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Priya is letting you know the printed proofs have shipped and she says nothing is needed from you until they arrive."
+  },
+  "e044": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Marcus is asking you to pick an episode title (he likes #1) and said he needed to lock it the night he wrote, so please reply right away."
+  },
+  "e043": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Marcus asks you to pick an episode title for Wednesday's episode, and he said he needs to lock it tonight, so it's time-sensitive (his email is from last Thursday, so check whether it's already been settled)."
+  },
+  "e041": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is a promotional email from CE Learning about a discounted trauma-informed care course, and it doesn't need a reply."
+  },
+  "e040": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is Thriveworks' monthly newsletter about telehealth guidelines, a grief CE course, and holiday hours, and it says no action is needed."
+  },
+  "e038": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Jamal is just confirming your usual Tuesday time, which is already arranged, so no reply is needed."
+  },
+  "e036": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dana wants to move next Wednesday's noon supervision and is asking you to pick between 1pm Wednesday or noon Thursday."
+  },
+  "e039": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "A parent is asking whether you can send the school a note about Zoe and whether a release is needed first; reply without confirming treatment in writing and mention that a signed release is usually needed, then follow up by phone."
+  },
+  "e037": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dr. Patel offered three recording times for Thriving Together (Nov 18, Nov 20, or Dec 2) and wants you to pick one; the earliest is over a week away."
+  },
+  "e034": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Priya is just letting you know the printed proofs have shipped and she says nothing is needed from you until they arrive."
+  },
+  "e035": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Taylor is asking for a copy of their records to send to a new provider, so this needs your follow-up; a signed release is usually needed first, and there is no stated deadline."
+  },
+  "e032": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is Thriveworks' November newsletter with telehealth updates, a grief course, and holiday hours, and it says no action is needed."
+  },
+  "e033": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Tomas, your upcoming podcast guest, is asking you to send the questions or themes and to tell him whether to share his own grief experience, with no firm deadline given."
+  },
+  "e031": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Priya wants to set up a 45-minute call about the copyedits on chapters 6-9 and asks you to send a couple of afternoon times that work, except Wednesday."
+  },
+  "e030": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is an automatic weekly stats update for Thriving Together, so nothing is needed from you."
+  },
+  "e028": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Marcus is asking you to pick a title for Wednesday's episode, and he said he needed to lock it the night he wrote, so it's time-sensitive and may already be past due."
+  },
+  "e029": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Jordan Hargrove, a new prospective client, wants a first appointment on weekday mornings and has been waiting since November 4, though nothing suggests a crisis."
+  },
+  "e027": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Marcus wants to find an hour to review the grief episode rough cut together; he's flexible any day except Friday, and the week isn't tied to a hard deadline."
+  },
+  "e025": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Priya is recapping decisions already made on your call and will send the updated schedule, so no reply is needed from you."
+  },
+  "e024": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dana is asking to move next week's Wednesday noon supervision to 1pm or to Thursday at noon, so she needs you to pick a time."
+  },
+  "e026": {
+    "category": "scheduling",
+    "urgent": true,
+    "reason": "Hector is having a hard week and is asking to talk sooner than his next appointment; he says he's safe, but this message has been waiting since Wednesday, so it's worth replying today."
+  },
+  "e022": {
+    "category": "scheduling",
+    "urgent": true,
+    "reason": "Jamal can't make his Tuesday session and is asking to move it to Thursday afternoon or Friday morning. The email came in last week, so check which Tuesday he means and reply soon."
+  },
+  "e023": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "The claims department wants you to confirm the session code (90837 or 90834) so they can process payment, but it's worth checking this request is genuine and sharing only what's needed, since it asks about a patient's details by email."
+  },
+  "e021": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "The Squirrel Hill library wants you to pick between Tuesday, December 1 or Thursday, December 3 (6-7:30pm) for an author talk on your book."
+  },
+  "e020": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is a member newsletter from the PA Society for Clinical Social Work with a legislative update and a conference call for proposals, and it doesn't ask you for anything."
+  },
+  "e019": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Rabbi Stern offered three recording times for Thriving Together (Nov 18, Nov 20, or Dec 2) and wants you to pick one; the earliest is over a week away, but he sent this six days ago, so a reply soon would be kind."
+  },
+  "e018": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Marcus is just letting you know episode 42 is uploaded and the social posts are scheduled, and he says he needs nothing from you."
+  },
+  "e017": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Priya is letting you know the printed proofs have shipped and nothing is needed from you until they arrive."
+  },
+  "e016": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is just a receipt from Riverside.fm for your $17.00 monthly plan, so nothing is needed from you."
+  },
+  "e014": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Jen is asking if you can recommend a child therapist who works with selective mutism for her friend, and she said there's no rush."
+  },
+  "e015": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Avery is asking for a copy of their records for a new provider, so this needs your decision and a reply; a signed release is usually needed before anything is shared, and the request has been waiting since last Tuesday."
+  },
+  "e012": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Ava is asking how to use the thought record worksheet and wants an answer before her session on Thursday, which is within two business days."
+  },
+  "e013": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Sofia is asking if you'll write a recommendation letter for her MSW application, which is due December 1, so she needs your yes or no."
+  },
+  "e011": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Dana is asking you to pick between 12:30 or 4:30 for a 30-minute team sync about the new intake process, though her note was sent last Tuesday night so the Thursday she meant may have already passed and it's worth confirming the date."
+  },
+  "e010": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Thriveworks Clinical Ops needs you to sign 4 progress notes in the portal and reply to confirm; the 7-day signing window has likely already passed since this email arrived on Nov 3, so it needs attention right away."
+  },
+  "e008": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Elena is just confirming her usual Tuesday appointment, so nothing needs to be booked or answered."
+  },
+  "e009": {
+    "category": "reply_needed",
+    "urgent": true,
+    "reason": "Thriveworks Clinical Ops needs you to sign 2 progress notes in the portal and reply to confirm, and the 7-day signing window has likely already passed since this arrived a week ago."
+  },
+  "e007": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "Priya is recapping decisions already made on your call (keep the title, swap chapters 7 and 6, manuscript due Nov 20) and will send the updated schedule, so no reply is needed."
+  },
+  "e004": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is just a Zoom receipt for your $25.00 monthly plan, so nothing is needed from you."
+  },
+  "e006": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Priya wants to find 45 minutes to go over the chapter 6-9 copyedits and asked you to send a couple of times that work; note her email was sent last Monday, so \"next week\" may now mean this week."
+  },
+  "e005": {
+    "category": "scheduling",
+    "urgent": false,
+    "reason": "Marcus wants to set up an hour to review the grief episode rough cut and is flexible any day except Friday, though his note is from last week so the timing may need a quick check."
+  },
+  "e003": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is Thriveworks' November newsletter about telehealth guidelines, a grief CE course, and holiday hours, and it says no action is needed."
+  },
+  "e002": {
+    "category": "fyi",
+    "urgent": false,
+    "reason": "This is an automated notice that a payment of $112.40 was processed, so no reply is needed."
+  },
+  "e001": {
+    "category": "reply_needed",
+    "urgent": false,
+    "reason": "Sofia is asking whether you'll write her a recommendation letter, which is due December 1, so she needs a yes or no from you."
+  }
+}
