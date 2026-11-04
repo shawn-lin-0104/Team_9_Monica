@@ -16,6 +16,8 @@ eval/        Evaluation scripts and results
 ```
 
 ## Quick start
+Requires **Python 3.10 or newer** (check with `python3 --version`). With conda:
+`conda create -n monica python=3.12 -y && conda activate monica`, then skip the venv line.
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
