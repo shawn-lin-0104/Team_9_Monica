@@ -15,18 +15,56 @@ tests/       Automated checks against the scope objectives
 eval/        Evaluation scripts and results
 ```
 
-## Quick start
-Requires **Python 3.10 or newer** (check with `python3 --version`). With conda:
-`conda create -n monica python=3.12 -y && conda activate monica`, then skip the venv line.
+## Run it on your laptop (http://localhost:8000)
+You need **Git** and **Python 3.10 or newer**. If `python3 --version` shows something older, use conda (step 2, option A).
+
+### First time
+1. Download the code (the repo is private; sign in with `gh auth login` or GitHub Desktop if asked):
+   ```bash
+   git clone https://github.com/shawn-lin-0104/Team_9_Monica.git
+   cd Team_9_Monica
+   ```
+2. Make a Python environment. Pick **one**:
+   - **A. conda** (recommended if you have Anaconda/Miniconda):
+     ```bash
+     conda create -n monica python=3.12 -y
+     conda activate monica
+     ```
+   - **B. venv on Mac:** `python3 -m venv .venv` then `source .venv/bin/activate`
+   - **C. venv on Windows (PowerShell):** `py -m venv .venv` then `.venv\Scripts\Activate.ps1`
+3. Install:
+   ```bash
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
+   ```
+4. Start the app:
+   ```bash
+   uvicorn assistant.app:app --reload
+   ```
+5. Open **http://localhost:8000** in Chrome. Press **Ctrl+C** in the terminal to stop.
+
+### Every time after that
 ```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm   # local name detection for the privacy filter
-uvicorn assistant.app:app --reload     # http://localhost:8000
-pytest                                  # run the checks
+cd Team_9_Monica
+conda activate monica            # or: source .venv/bin/activate  (Windows: .venv\Scripts\Activate.ps1)
+git pull
+uvicorn assistant.app:app --reload
 ```
-The AI features need an Anthropic API key in the `ANTHROPIC_API_KEY` environment variable.
-Never commit the key.
+If `git pull` brought a new `requirements.txt`, run `pip install -r requirements.txt` again.
+
+### Turning on the AI (optional)
+Without a key, the schedule, inbox (already sorted, from `data/cache/`), privacy view, and follow-ups all work;
+AI buttons say they need a key. To turn them on, set the key **in the terminal before starting the app**:
+```bash
+export ANTHROPIC_API_KEY="your-key"          # Windows PowerShell: $env:ANTHROPIC_API_KEY="your-key"
+uvicorn assistant.app:app --reload
+```
+Never put the key in a file you commit. Each draft/summary/chat message costs about 1-2 cents; see `/api/usage`.
+
+### Useful extras
+- `http://localhost:8000/docs`: try every API endpoint in the browser
+- Reset approvals/outbox before a demo: `POST /api/demo/reset` from the `/docs` page
+- Run the checks: `pytest` · Scores: `python eval/eval_redaction.py`, `python eval/eval_triage.py`
 
 ## Progress against scope objectives
 | Objective | Target | Status |
@@ -35,7 +73,7 @@ Never commit the key.
 | Privacy filter catches planted identifiers | ≥ 95% | Passing: 66/66 (100%). `python eval/eval_redaction.py` |
 | No identifier reaches the model | 100% | Passing (tests/test_ai_offline.py checks every request) |
 | Every action needs Monica's approval | 100% | Passing (no AI tool can send/book; tests/test_ai_offline.py) |
-| Email triage accuracy | ≥ 85% | Built; run `python eval/eval_triage.py` once the API key is set |
+| Email triage accuracy | ≥ 85% | Passing: 97/100 (97%) on Sonnet 5.5, $0.36. See `eval/results/triage.md`. Optimistic: we wrote the emails, labels, and prompt |
 | Monica's ease-of-use rating | ≥ 4/5 | At the demo |
 
 ## How the AI works
