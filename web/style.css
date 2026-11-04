@@ -92,3 +92,38 @@ footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px
   .timeline li { grid-template-columns: 64px 1fr; gap: 8px; }
   body { font-size: 16px; }
 }
+
+/* ---- v2: AI features ---- */
+.h1sub { font-weight: 400; color: var(--muted); font-size: 16px; }
+.tabs button { padding: 12px 4px; font-size: 15px; }
+button.primary, button.secondary, button.chip, button.small {
+  border: 0; border-radius: 10px; padding: 11px 16px; font: inherit; font-weight: 600; cursor: pointer; min-height: 44px;
+}
+button.primary { background: var(--accent); color: var(--accent-ink); }
+button.secondary { background: var(--card); color: var(--ink); border: 1px solid var(--line); }
+button.small { padding: 6px 12px; min-height: 36px; font-size: 14px; background: var(--card); border: 1px solid var(--line); color: var(--ink); }
+button:disabled { opacity: .6; cursor: progress; }
+.chip { background: var(--soon-bg); color: var(--soon-ink); font-size: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.group h3 { font-size: 16px; margin: 18px 0 8px; display: flex; gap: 8px; align-items: baseline; }
+.count { color: var(--muted); font-weight: 400; font-size: 14px; }
+.reason { font-size: 14px; color: var(--accent); margin-top: 2px; }
+.urgent { display: inline-block; background: #b3261e; color: #fff; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 999px; margin-left: 6px; text-transform: uppercase; }
+.approval { border: 2px solid var(--accent); }
+.approval h4 { margin: 0 0 6px; font-size: 15px; }
+.approval .label { font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .04em; }
+.approval textarea { width: 100%; min-height: 160px; font: inherit; font-size: 15px; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+.approval .opt { display: flex; gap: 10px; align-items: center; padding: 10px; border: 1px solid var(--line); border-radius: 10px; margin: 6px 0; cursor: pointer; }
+.btnrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.done { background: var(--free-bg); color: var(--free-ink); border-color: transparent; }
+.err { background: var(--warn-bg); color: var(--warn-ink); border-color: transparent; }
+.summary dt { font-weight: 700; font-size: 14px; color: var(--muted); margin-top: 8px; }
+.summary dd { margin: 2px 0 0; }
+.chatlog { display: flex; flex-direction: column; gap: 10px; }
+.bubble { max-width: 85%; padding: 10px 14px; border-radius: 16px; white-space: pre-wrap; }
+.bubble.bot { background: var(--card); border: 1px solid var(--line); align-self: flex-start; }
+.bubble.me { background: var(--accent); color: var(--accent-ink); align-self: flex-end; }
+.chatform { display: flex; gap: 8px; position: sticky; bottom: 0; background: var(--bg); padding: 10px 0; }
+.chatform input { flex: 1; min-height: 44px; border-radius: 10px; border: 1px solid var(--line); padding: 0 12px; font: inherit; background: var(--card); color: var(--ink); }
+.event { cursor: pointer; }
+.prep { margin-top: 8px; font-size: 15px; }

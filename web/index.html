@@ -11,7 +11,7 @@
     <div class="brand">
       <span class="logo" aria-hidden="true">✿</span>
       <div>
-        <h1>Monica's Assistant</h1>
+        <h1>Sage <span class="h1sub">· Monica's assistant</span></h1>
         <p class="sub">Prototype · simulated data only</p>
       </div>
     </div>
@@ -19,13 +19,19 @@
       <button role="tab" data-tab="today" aria-selected="true">Today</button>
       <button role="tab" data-tab="inbox" aria-selected="false">Inbox</button>
       <button role="tab" data-tab="followups" aria-selected="false">Follow-ups</button>
+      <button role="tab" data-tab="chat" aria-selected="false">Ask Sage</button>
     </nav>
   </header>
 
   <main>
+    <div id="aiBanner" class="card warn" hidden>
+      AI features are switched off on this server (no API key). Schedule, inbox, and privacy still work.
+    </div>
+
     <!-- TODAY -->
     <section id="tab-today" class="tab">
       <div class="briefing card" id="briefing">Loading your day…</div>
+      <div id="pending"></div>
 
       <div class="daynav">
         <button class="ghost" id="prevDay" aria-label="Previous day">‹</button>
@@ -33,7 +39,6 @@
         <button class="ghost" id="nextDay" aria-label="Next day">›</button>
       </div>
       <div class="legend" id="legend"></div>
-
       <div id="conflicts"></div>
       <div id="allDay"></div>
       <ol class="timeline" id="timeline"></ol>
@@ -41,29 +46,43 @@
 
     <!-- INBOX -->
     <section id="tab-inbox" class="tab" hidden>
-      <div class="card soon">
-        <strong>Coming soon:</strong> the assistant will sort these into
-        <em>Reply needed</em>, <em>Scheduling</em>, and <em>For your information</em>, with a reason for each.
-      </div>
-      <ul class="inbox" id="inbox"></ul>
+      <div id="sortBox"></div>
+      <div id="inbox"></div>
     </section>
 
     <!-- EMAIL DETAIL -->
     <section id="tab-email" class="tab" hidden>
       <button class="ghost back" id="backToInbox">‹ Back to inbox</button>
       <article class="card" id="emailDetail"></article>
+      <div id="emailTools"></div>
     </section>
 
     <!-- FOLLOW-UPS -->
     <section id="tab-followups" class="tab" hidden>
+      <h2>I need to reply</h2>
+      <ul class="list" id="needReply"></ul>
       <h2>I'm waiting for a response</h2>
-      <p class="muted">Emails you sent that haven't been answered yet.</p>
       <ul class="list" id="waiting"></ul>
-      <div class="card soon"><strong>Coming soon:</strong> "I need to reply" reminders, with snooze and mark-as-done.</div>
+    </section>
+
+    <!-- CHAT -->
+    <section id="tab-chat" class="tab" hidden>
+      <div id="chatLog" class="chatlog">
+        <div class="bubble bot">Hi Monica, I'm Sage. Ask me about your day, your email, or finding time. I'll only suggest; you approve.</div>
+      </div>
+      <div class="chips" id="chatChips">
+        <button class="chip">What needs my attention?</button>
+        <button class="chip">Find 30 minutes tomorrow afternoon</button>
+        <button class="chip">Do I have any conflicts this week?</button>
+      </div>
+      <form id="chatForm" class="chatform">
+        <input id="chatInput" autocomplete="off" placeholder="Ask Sage…" aria-label="Message Sage">
+        <button class="primary" type="submit">Send</button>
+      </form>
     </section>
   </main>
 
-  <footer>Every action will need your approval. Nothing is sent or booked automatically.</footer>
+  <footer>Sage only suggests. Nothing is sent or booked until you tap Approve. Sending is simulated in this prototype.</footer>
   <script src="/static/app.js"></script>
 </body>
 </html>

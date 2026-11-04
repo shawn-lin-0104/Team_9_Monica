@@ -32,9 +32,27 @@ Never commit the key.
 | Objective | Target | Status |
 |---|---|---|
 | Calendar merge: all events, no duplicates or missing | 100% | Passing (105 raw events, 4 planted duplicates merged into 101; 5 planted conflicts found) |
-| Privacy filter catches planted identifiers | ≥ 95% | Passing: 66/66 (100%). Run `python eval/eval_redaction.py` |
-| Email triage accuracy | ≥ 85% | Not started |
-| Actions require approval | 100% | Not started |
+| Privacy filter catches planted identifiers | ≥ 95% | Passing: 66/66 (100%). `python eval/eval_redaction.py` |
+| No identifier reaches the model | 100% | Passing (tests/test_ai_offline.py checks every request) |
+| Every action needs Monica's approval | 100% | Passing (no AI tool can send/book; tests/test_ai_offline.py) |
+| Email triage accuracy | ≥ 85% | Built; run `python eval/eval_triage.py` once the API key is set |
+| Monica's ease-of-use rating | ≥ 4/5 | At the demo |
+
+## How the AI works
+Claude Sonnet 5.5 (set `ASSISTANT_MODEL` to change), wearing the persona "Sage" (`assistant/prompts.py`).
+Every feature follows the same path: **redact → Claude (structured JSON) → restore placeholders → propose**.
+Nothing is executed until Monica approves it (`assistant/state.py`). Sending is simulated.
+
+| Feature | File | Claude? |
+|---|---|---|
+| Calendar merge, free time, overlaps | `calendar_merge.py` | No |
+| Privacy filter | `redaction.py` | No (runs before Claude) |
+| Email sorting, summaries, reply drafts, meeting-time extraction, meeting prep | `features.py` | Yes |
+| Chat assistant (read-only tools + proposal tools) | `chat.py` | Yes |
+| Daily briefing, follow-ups, approval queue | `app.py`, `state.py` | No |
+
+AI results are saved in `data/cache/` so each email is sorted/summarized once. Spending is logged to
+`data/state/usage.jsonl` and shown at `/api/usage`.
 
 ## Privacy filter: known limits
 The 100% score is on identifiers our team planted, using formats we knew about. `tests/test_redaction.py`
