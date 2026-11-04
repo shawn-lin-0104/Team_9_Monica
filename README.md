@@ -19,6 +19,7 @@ eval/        Evaluation scripts and results
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+python -m spacy download en_core_web_sm   # local name detection for the privacy filter
 uvicorn assistant.app:app --reload     # http://localhost:8000
 pytest                                  # run the checks
 ```
@@ -29,9 +30,16 @@ Never commit the key.
 | Objective | Target | Status |
 |---|---|---|
 | Calendar merge: all events, no duplicates or missing | 100% | Passing (105 raw events, 4 planted duplicates merged into 101; 5 planted conflicts found) |
-| Privacy filter catches planted identifiers | ≥ 95% | In progress |
+| Privacy filter catches planted identifiers | ≥ 95% | Passing: 66/66 (100%). Run `python eval/eval_redaction.py` |
 | Email triage accuracy | ≥ 85% | Not started |
 | Actions require approval | 100% | Not started |
+
+## Privacy filter: known limits
+The 100% score is on identifiers our team planted, using formats we knew about. `tests/test_redaction.py`
+also checks 13 formats that are not in the dataset (all caught) and records 3 known gaps:
+names typed in lowercase mid-sentence, street addresses with no "St/Ave/Rd", and spelled-out emails
+("jordan dot kessler at gmail dot com"). A real deployment would need a stronger detector and a
+review by Monica's organization.
 
 ## Dataset
 - 100 inbox emails: 38 reply needed, 27 scheduling, 35 FYI, some with earlier thread history

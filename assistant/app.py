@@ -17,6 +17,7 @@ from pydantic import BaseModel
 
 from . import data_store as ds
 from .calendar_merge import TZ, day_view, events_between, find_conflicts, free_slots
+from .redaction import redact_email
 
 app = FastAPI(title="Monica's Assistant API", version="0.1.0")
 WEB_DIR = Path(__file__).resolve().parent.parent / "web"
@@ -77,6 +78,21 @@ def get_email(email_id: str):
     if not e:
         raise HTTPException(404, "email not found")
     return e
+
+
+@app.get("/api/emails/{email_id}/privacy")
+def email_privacy(email_id: str):
+    """Exactly what the AI model would receive for this email, and how many details were hidden.
+    Lets the website show e.g. "3 private details hidden before AI processing"."""
+    e = ds.email(email_id)
+    if not e:
+        raise HTTPException(404, "email not found")
+    safe, r = redact_email(e)
+    kinds: dict[str, int] = {}
+    for ph in r.mapping:
+        k = ph.strip("[]").rsplit("_", 1)[0].lower()
+        kinds[k] = kinds.get(k, 0) + 1
+    return {"email_id": email_id, "hidden_count": len(r.mapping), "hidden_by_type": kinds, "sent_to_ai": safe}
 
 
 # ---------------------------------------------------------------- follow-ups (real)

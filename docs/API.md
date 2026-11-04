@@ -18,6 +18,7 @@ shape; the real version will keep the same fields.
 | GET | `/api/calendar/free-slots?date=&minutes=30` | Real | Open times on a day (9am-6pm by default) |
 | GET | `/api/emails` | Real (triage Mock) | Inbox list; `triage` is `null` until triage ships |
 | GET | `/api/emails/{id}` | Real | One email, with earlier messages in `history` |
+| GET | `/api/emails/{id}/privacy` | Real | What the AI would see for this email + `hidden_count` (for a "3 details hidden" badge) |
 | GET | `/api/followups` | Real | "I'm waiting for a response" list |
 | POST | `/api/emails/{id}/summary` | Mock | Main request, deadline, what's already agreed |
 | POST | `/api/emails/{id}/draft` | Mock | Suggested reply; body `{"tone": "shorter" \| "friendlier" \| null}` |
