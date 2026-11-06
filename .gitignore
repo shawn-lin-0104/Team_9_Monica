@@ -5,3 +5,9 @@ __pycache__/
 .env
 data/state/
 *.tmp
+
+# Local credentials and generated AI responses (keep the shared triage fixture).
+.env.*
+!.env.example
+data/cache/*.json
+!data/cache/triage.json

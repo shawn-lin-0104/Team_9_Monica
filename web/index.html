@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Monica's Assistant</title>
   <link rel="stylesheet" href="/static/style.css">
 </head>
@@ -15,11 +15,11 @@
         <p class="sub">Prototype · simulated data only</p>
       </div>
     </div>
-    <nav class="tabs" role="tablist">
-      <button role="tab" data-tab="today" aria-selected="true">Today</button>
-      <button role="tab" data-tab="inbox" aria-selected="false">Inbox</button>
-      <button role="tab" data-tab="followups" aria-selected="false">Follow-ups</button>
-      <button role="tab" data-tab="chat" aria-selected="false">Ask Sage</button>
+    <nav class="tabs" role="tablist" aria-label="Main navigation">
+      <button role="tab" data-tab="today" aria-selected="true" aria-controls="tab-today" id="nav-today"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18m-13 4h3m2 0h3"/></svg><span>Today</span></button>
+      <button role="tab" data-tab="inbox" aria-selected="false" aria-controls="tab-inbox" id="nav-inbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16l2 12v4H2v-4L4 4Z"/><path d="M2 16h6l2 3h4l2-3h6"/></svg><span>Inbox</span></button>
+      <button role="tab" data-tab="followups" aria-selected="false" aria-controls="tab-followups" id="nav-followups"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Follow-ups</span></button>
+      <button role="tab" data-tab="chat" aria-selected="false" aria-controls="tab-chat" id="nav-chat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11a8 8 0 0 1-8 8H7l-5 3 2-6a8 8 0 0 1-1-4 8 8 0 0 1 8-8h2a8 8 0 0 1 8 7Z"/><path d="M8 11h8m-8 4h5"/></svg><span>Ask Sage</span></button>
     </nav>
   </header>
 
@@ -29,7 +29,7 @@
     </div>
 
     <!-- TODAY -->
-    <section id="tab-today" class="tab">
+    <section id="tab-today" class="tab" role="tabpanel" aria-labelledby="nav-today">
       <div class="briefing card" id="briefing">Loading your day…</div>
       <div id="pending"></div>
 
@@ -45,8 +45,15 @@
     </section>
 
     <!-- INBOX -->
-    <section id="tab-inbox" class="tab" hidden>
+    <section id="tab-inbox" class="tab" role="tabpanel" aria-labelledby="nav-inbox" hidden>
+      <div class="inbox-heading"><h2>Your inbox</h2><p class="muted">Choose what needs your attention.</p></div>
+      <div class="inbox-controls">
+        <label class="search-label" for="inboxSearch">Search emails</label>
+        <div class="inbox-search"><input type="search" id="inboxSearch" placeholder="Search sender or subject" autocomplete="off"><button class="secondary" id="clearInboxSearch" hidden>Clear</button></div>
+        <div class="inbox-filters" id="inboxFilters" role="group" aria-label="Filter emails"></div>
+      </div>
       <div id="sortBox"></div>
+      <p id="inboxResults" class="inbox-results" role="status" aria-live="polite"></p>
       <div id="inbox"></div>
     </section>
 
@@ -54,20 +61,23 @@
     <section id="tab-email" class="tab" hidden>
       <button class="ghost back" id="backToInbox">‹ Back to inbox</button>
       <article class="card" id="emailDetail"></article>
-      <div id="emailTools"></div>
+      <div id="emailTools" aria-live="polite"></div>
+      <div id="emailOriginal"></div>
     </section>
 
     <!-- FOLLOW-UPS -->
-    <section id="tab-followups" class="tab" hidden>
-      <h2>I need to reply</h2>
+    <section id="tab-followups" class="tab" role="tabpanel" aria-labelledby="nav-followups" hidden>
+      <div class="page-heading"><h2>Follow-ups</h2><p>Keep track of replies and reminders.</p></div>
+      <h3 class="section-title">I need to reply</h3>
       <ul class="list" id="needReply"></ul>
-      <h2>I'm waiting for a response</h2>
+      <h3 class="section-title">Waiting for a response</h3>
       <ul class="list" id="waiting"></ul>
     </section>
 
     <!-- CHAT -->
-    <section id="tab-chat" class="tab" hidden>
-      <div id="chatLog" class="chatlog">
+    <section id="tab-chat" class="tab" role="tabpanel" aria-labelledby="nav-chat" hidden>
+      <div class="page-heading"><h2>Ask Sage</h2><p>A little help with your day.</p></div>
+      <div id="chatLog" class="chatlog" role="log" aria-live="polite">
         <div class="bubble bot">Hi Monica, I'm Sage. Ask me about your day, your email, or finding time. I'll only suggest; you approve.</div>
       </div>
       <div class="chips" id="chatChips">

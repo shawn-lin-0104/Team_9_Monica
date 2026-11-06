@@ -49,7 +49,29 @@ function show(tab) {
   if (tab === "followups") loadFollowups();
   if (tab === "inbox") loadInbox();
 }
-document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => show(b.dataset.tab)));
+document.querySelectorAll(".tabs button").forEach((b, index, buttons) => {
+  b.addEventListener("click", () => show(b.dataset.tab));
+  b.addEventListener("keydown", (ev) => {
+    const delta = ev.key === "ArrowRight" ? 1 : ev.key === "ArrowLeft" ? -1 : 0;
+    if (!delta) return;
+    ev.preventDefault();
+    const next = buttons[(index + delta + buttons.length) % buttons.length];
+    next.focus(); show(next.dataset.tab);
+  });
+});
+// Keep the chat composer above the phone keyboard; hide bottom tabs while typing.
+function syncKeyboardLayout() {
+  const viewport = window.visualViewport;
+  const editing = document.activeElement?.matches("input:not([type=radio]), textarea");
+  const occlusion = viewport ? Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop) : 0;
+  const keyboardOpen = !!editing && occlusion > 150;
+  document.body.classList.toggle("keyboard-open", keyboardOpen);
+  document.documentElement.style.setProperty("--keyboard-offset", keyboardOpen ? `${occlusion}px` : "0px");
+}
+window.visualViewport?.addEventListener("resize", syncKeyboardLayout);
+window.visualViewport?.addEventListener("scroll", syncKeyboardLayout);
+document.addEventListener("focusin", syncKeyboardLayout);
+document.addEventListener("focusout", () => requestAnimationFrame(syncKeyboardLayout));
 
 // ------------------------------------------------------------------ approval cards (shared)
 function renderAction(a, container, onDone) {
@@ -59,7 +81,7 @@ function renderAction(a, container, onDone) {
   if (a.type === "send_email") {
     card.innerHTML = `<div class="label">Waiting for your OK · email</div>
       <h4>To ${esc(p.to)}</h4>
-      <input class="subj" value="${esc(p.subject)}" aria-label="Subject" style="width:100%;margin-bottom:8px;padding:8px;border-radius:8px;border:1px solid var(--line);font:inherit;background:var(--bg);color:var(--ink)">
+      <input class="subj" value="${esc(p.subject)}" aria-label="Subject">
       <textarea aria-label="Email text">${esc(p.body)}</textarea>
       <div class="btnrow"><button class="primary go">Approve &amp; send</button><button class="secondary no">Discard</button></div>`;
   } else {
@@ -129,7 +151,12 @@ async function loadDay(day) {
   $("#timeline").innerHTML = items.length
     ? items.map((i) => `<li><div class="time">${timeOf(i.at)}</div>${i.html}</li>`).join("")
     : `<li><div></div><div class="card muted">Nothing scheduled.</div></li>`;
-  document.querySelectorAll(".event").forEach((el) => el.addEventListener("click", () => togglePrep(el)));
+  document.querySelectorAll(".event").forEach((el) => {
+    el.addEventListener("click", () => togglePrep(el));
+    el.addEventListener("keydown", (ev) => {
+      if (ev.target === el && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); togglePrep(el); }
+    });
+  });
 }
 
 function eventHtml(e, isNext, isClash) {
@@ -154,9 +181,11 @@ async function togglePrep(el) {
   try {
     const p = await api(`/api/meetings/${encodeURIComponent(el.dataset.id)}/prep`);
     box.dataset.loaded = "1";
-    box.innerHTML = `<strong>Prep:</strong> ${esc(p.summary)}` +
-      (p.open_questions.length ? `<br><strong>Open questions:</strong><ul>${p.open_questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ul>` : "") +
-      (p.related_emails.length ? `<span class="muted">Related: ${p.related_emails.map((r) => esc(r.subject)).join("; ")}</span>` : "");
+    box.innerHTML = `<h3>Before this meeting</h3><p>${esc(p.summary)}</p>` +
+      (p.follow_up_actions.length ? `<h3>Follow-up actions</h3><ul class="prep-actions">${p.follow_up_actions.map((q) => `<li>${esc(q)}</li>`).join("")}</ul>` : `<p class="muted">No follow-up actions identified.</p>`) +
+      (p.related_emails.length ? `<h3>Related emails</h3><div class="prep-related">${p.related_emails.map((r) => `<button class="small" data-email="${esc(r.id)}">${esc(r.subject)}</button>`).join("")}</div>` : "");
+    box.addEventListener("click", (ev) => ev.stopPropagation());
+    box.querySelectorAll("[data-email]").forEach((button) => button.addEventListener("click", () => openEmail(button.dataset.email)));
   } catch (e) { box.innerHTML = `<span class="muted">${esc(e.message)}</span>`; }
 }
 
@@ -165,8 +194,17 @@ $("#nextDay").addEventListener("click", () => loadDay(addDays(current, 1)));
 $("#legend").innerHTML = Object.entries(CAL_NAMES).map(([k, n]) => `<span><span class="dot" style="background:${calColor(k)}"></span>${n}</span>`).join("");
 
 // ------------------------------------------------------------------ inbox
+let inboxEmails = [], inboxCategory = "reply_needed", inboxQuery = "", inboxScroll = 0;
+let inboxRequest = 0;
+const INBOX_FILTERS = { reply_needed: "Needs reply", scheduling: "Scheduling", fyi: "FYI", all: "All" };
 async function loadInbox() {
-  const { emails, sorted, total } = await api("/api/emails");
+  const request = ++inboxRequest;
+  let data;
+  try { data = await api("/api/emails"); }
+  catch (err) { showError($("#sortBox"), err); return; }
+  if (request !== inboxRequest) return;
+  const { emails, sorted, total } = data;
+  inboxEmails = emails;
   const box = $("#sortBox");
   if (sorted < total && aiOn) {
     box.innerHTML = `<div class="card soon">${sorted ? `${total - sorted} emails aren't sorted yet.` : "Sage can sort your inbox into Reply needed, Scheduling, and For your information."}
@@ -176,48 +214,82 @@ async function loadInbox() {
     }));
   } else box.innerHTML = "";
 
-  const row = (e) => `<li tabindex="0" data-id="${e.id}">
-      <div class="row"><span class="from">${esc(e.from_name)}${urgentTag(e.triage)}</span><span class="when">${shortDate(e.received_at)}</span></div>
-      <div class="subject">${esc(e.subject)}</div>
-      ${e.triage && e.triage.reason ? `<div class="reason">${esc(e.triage.reason)}</div>` : `<div class="preview">${esc(e.preview.replace(/\s+/g, " "))}</div>`}
-    </li>`;
-  let html;
-  if (sorted) {
-    const groups = { reply_needed: [], scheduling: [], fyi: [], unsorted: [] };
-    emails.forEach((e) => groups[(e.triage && e.triage.category) || "unsorted"].push(e));
-    Object.values(groups).forEach((g) => g.sort((a, b) => (b.triage?.urgent ? 1 : 0) - (a.triage?.urgent ? 1 : 0)));
-    html = Object.entries(groups).filter(([, g]) => g.length).map(([k, g]) =>
-      `<div class="group"><h3>${CAT_NAMES[k] || "Not sorted yet"} <span class="count">${g.length}</span></h3><ul class="inbox">${g.map(row).join("")}</ul></div>`).join("");
-  } else html = `<ul class="inbox">${emails.map(row).join("")}</ul>`;
-  $("#inbox").innerHTML = html;
-  $("#inbox").querySelectorAll("li").forEach((li) => {
-    li.addEventListener("click", () => openEmail(li.dataset.id));
-    li.addEventListener("keydown", (ev) => ev.key === "Enter" && openEmail(li.dataset.id));
-  });
+  renderInbox();
 }
+
+function renderInbox() {
+  const query = inboxQuery.trim().toLocaleLowerCase();
+  const matches = inboxEmails.filter((e) => !query ||
+    [e.from_name, e.from_email, e.subject, e.preview, e.triage?.reason].join(" ").toLocaleLowerCase().includes(query));
+  const filters = { ...INBOX_FILTERS };
+  if (inboxEmails.some((e) => !e.triage?.category)) filters.unsorted = "Unsorted";
+  const inCategory = (e, category) => category === "all" ||
+    (category === "unsorted" ? !e.triage?.category : e.triage?.category === category);
+  $("#inboxFilters").innerHTML = Object.entries(filters).map(([key, label]) => {
+    const count = matches.filter((e) => inCategory(e, key)).length;
+    return `<button class="inbox-filter" data-category="${key}" aria-pressed="${inboxCategory === key}">${label}<span>${count}</span></button>`;
+  }).join("");
+  $("#inboxFilters").querySelectorAll("button").forEach((button) => button.addEventListener("click", () => {
+    inboxCategory = button.dataset.category; inboxScroll = 0; renderInbox();
+    $(`[data-category="${inboxCategory}"]`, $("#inboxFilters")).focus();
+  }));
+  const emails = matches.filter((e) => inCategory(e, inboxCategory)).sort((a, b) =>
+    Number(!!b.triage?.urgent) - Number(!!a.triage?.urgent) || new Date(b.received_at) - new Date(a.received_at));
+  $("#clearInboxSearch").hidden = !inboxQuery;
+  $("#inboxResults").textContent = `${emails.length} ${emails.length === 1 ? "email" : "emails"}${query ? ` matching “${inboxQuery.trim()}”` : ""} · ${filters[inboxCategory] || "Unsorted"} · Urgent first`;
+  if (!emails.length) {
+    $("#inbox").innerHTML = `<div class="card inbox-empty"><h3>${query ? "No matching emails" : "Nothing here right now"}</h3><p class="muted">${query ? "Try another name or keyword, or choose a different category." : "Choose another category to see the rest of your inbox."}</p><button class="secondary" id="showAllInbox">${query ? "Clear search and show all" : "Show all emails"}</button></div>`;
+    $("#showAllInbox").addEventListener("click", () => { inboxCategory = "all"; inboxQuery = ""; $("#inboxSearch").value = ""; renderInbox(); });
+    return;
+  }
+  $("#inbox").innerHTML = `<ul class="inbox inbox-compact">${emails.map((e) => {
+    const label = e.triage?.category === "reply_needed" ? "Review and reply" : e.triage?.category === "scheduling" ? "Review times" : "Read email";
+    return `<li><button class="inbox-open" data-id="${esc(e.id)}">
+      <span class="row"><span class="from">${esc(e.from_name)}</span><span class="when">${shortDate(e.received_at)}</span></span>
+      <span class="inbox-card-title">${esc(e.subject)}</span>
+      <span class="inbox-card-reason">${esc(e.triage?.reason || e.preview.replace(/\s+/g, " "))}</span>
+      <span class="inbox-card-footer"><span>${urgentTag(e.triage)}${inboxCategory === "all" ? `<span class="inbox-category">${esc(CAT_NAMES[e.triage?.category] || "Unsorted")}</span>` : ""}</span><span class="inbox-cta">${label} <span aria-hidden="true">→</span></span></span>
+    </button></li>`;
+  }).join("")}</ul>`;
+  $("#inbox").querySelectorAll("[data-id]").forEach((button) => button.addEventListener("click", () => {
+    inboxScroll = window.scrollY; openEmail(button.dataset.id);
+  }));
+}
+$("#inboxSearch").addEventListener("input", (ev) => { inboxQuery = ev.target.value; inboxScroll = 0; renderInbox(); });
+$("#clearInboxSearch").addEventListener("click", () => { inboxQuery = ""; $("#inboxSearch").value = ""; renderInbox(); $("#inboxSearch").focus(); });
 
 let draftAction = null;
 async function openEmail(id) {
   show("email");
   draftAction = null;
-  $("#emailDetail").innerHTML = "Loading…"; $("#emailTools").innerHTML = "";
+  $("#emailDetail").innerHTML = "Loading…"; $("#emailTools").innerHTML = ""; $("#emailOriginal").innerHTML = "";
   const [e, p] = await Promise.all([api(`/api/emails/${id}`), api(`/api/emails/${id}/privacy`)]);
   const history = e.history.map((h) => `<div class="thread"><strong>Earlier · ${esc(h.from)} · ${shortDate(h.date)}</strong>\n${esc(h.body)}</div>`).join("");
   const privacy = p.hidden_count
     ? `🔒 <strong>${p.hidden_count} private detail${p.hidden_count === 1 ? "" : "s"}</strong> hidden before Sage reads this email.`
     : "🔒 No private details found. Sage sees this email as written.";
+  const category = e.triage?.category;
+  const heading = category === "reply_needed" ? "Reply needed" : category === "scheduling" ? "Arrange a time" : category === "fyi" ? "For your information" : "Review this email";
+  const draftButton = `<button class="${category === "reply_needed" ? "primary" : "secondary"}" id="btnDraft">Suggest a reply</button>`;
+  const scheduleButton = `<button class="${category === "scheduling" ? "primary" : "secondary"}" id="btnSchedule">Find meeting times</button>`;
+  $("#emailDetail").className = "card email-action";
   $("#emailDetail").innerHTML = `
-    <div class="row"><span class="from">${esc(e.from_name)}${urgentTag(e.triage)}</span><span class="when">${shortDate(e.received_at)}</span></div>
-    <h2>${esc(e.subject)}</h2>
-    ${e.triage ? `<div class="reason">${esc(CAT_NAMES[e.triage.category])} · ${esc(e.triage.reason)}</div>` : ""}
-    <div class="body" style="margin-top:10px">${esc(e.body)}</div>
-    ${history}
-    <details class="privacy"><summary>${privacy}</summary><p>This is exactly what Sage receives:</p><pre>${esc(p.sent_to_ai.body)}</pre></details>
-    <div class="btnrow">
-      <button class="secondary" id="btnSummary">Summarize</button>
-      <button class="secondary" id="btnDraft">Suggest a reply</button>
-      <button class="secondary" id="btnSchedule">Find meeting times</button>
-    </div>`;
+    <div class="action-heading"><h2>${heading}</h2>${urgentTag(e.triage)}</div>
+    <p class="action-reason">${esc(e.triage?.reason || "Read the original message below to decide what to do next.")}</p>
+    <div class="email-context"><strong>${esc(e.from_name)}</strong><span>${shortDate(e.received_at)}</span><div>${esc(e.subject)}</div></div>
+    <div class="btnrow email-buttons">
+      ${category === "scheduling" ? scheduleButton + draftButton : draftButton + scheduleButton}
+      <button class="secondary" id="btnSummary">Summarize thread</button>
+    </div>
+    <p class="action-note">Review and edit any suggestion before you approve it.</p>`;
+  $("#emailOriginal").innerHTML = `<details class="card original-email">
+    <summary><span>Original email <span class="original-hint">Read the message and earlier conversation</span></span></summary>
+    <div class="original-content">
+      <div class="row"><strong>${esc(e.from_name)}</strong><span class="when">${shortDate(e.received_at)}</span></div>
+      <h3>${esc(e.subject)}</h3>
+      <div class="body">${esc(e.body)}</div>${history}
+      <details class="privacy"><summary>${privacy}</summary><p>This is exactly what Sage receives:</p><pre>${esc(p.sent_to_ai.body)}</pre></details>
+    </div></details>`;
   const tools = $("#emailTools");
   $("#btnSummary").addEventListener("click", (ev) => busy(ev.target, "Reading…", async () => {
     try {
@@ -256,7 +328,9 @@ async function makeDraft(id, opts) {
       busy(b, "Rewriting…", () => makeDraft(id, { tone: b.dataset.tone }))));
   } catch (err) { showError(tools, err); }
 }
-$("#backToInbox").addEventListener("click", () => show("inbox"));
+$("#backToInbox").addEventListener("click", () => {
+  show("inbox"); renderInbox(); window.scrollTo(0, inboxScroll);
+});
 
 // ------------------------------------------------------------------ follow-ups
 async function loadFollowups() {

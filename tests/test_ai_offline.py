@@ -42,8 +42,8 @@ class FakeClient:
             out = {"is_meeting_request": True, "title": "Call with Priya", "with_whom": "Priya",
                    "duration_minutes": 45, "calendar": "book", "specific_times": [],
                    "candidate_dates": ["2026-11-16", "2026-11-17"], "earliest_hour": 13, "latest_hour": 17}
-        elif "open_questions" in props:
-            out = {"summary": "Talk about launch.", "open_questions": ["Which date?"]}
+        elif "follow_up_actions" in props:
+            out = {"summary": "Talk about launch.", "follow_up_actions": ["Confirm the launch date."]}
         else:
             out = {"subject": "Re: hello", "body": "Hi, thanks! I'll call you at [PHONE_1].\n\nMonica"}
         return NS(content=[NS(type="text", text=json.dumps(out))], stop_reason="end_turn", usage=usage)

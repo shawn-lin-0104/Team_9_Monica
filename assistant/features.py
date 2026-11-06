@@ -77,7 +77,7 @@ SUMMARY_SCHEMA = _obj({
 
 
 def summarize(email_id: str) -> dict:
-    cached = state.cache_get("summary").get(email_id)
+    cached = state.cache_get("summary_reader_v2").get(email_id)
     if cached:
         return cached
     safe, r = redact_email(ds.email(email_id))
@@ -89,7 +89,7 @@ def summarize(email_id: str) -> dict:
                    "in the thread (empty if none). suggested_next_step: one short sentence.\n\n" + _email_prompt(safe)}],
     )
     out = json.loads(r.restore(json.dumps(out)))
-    state.cache_put("summary", email_id, out)
+    state.cache_put("summary_reader_v2", email_id, out)
     return out
 
 
@@ -115,7 +115,7 @@ def draft_reply(email_id: str, tone: str | None = None, instructions: str | None
     if instructions:
         asks.append("Monica's instructions: " + r.redact(instructions))
     if (state.cache_get("triage").get(email_id) or {}).get("category") == "scheduling":
-        asks.append("If the sender asked for times, do not invent availability; say Monica will confirm a time shortly.")
+        asks.append("If the sender asked for times, do not invent availability; say in first person that you will confirm a time shortly.")
     out = llm.create_json(
         feature="draft", schema=DRAFT_SCHEMA, effort="low", max_tokens=6000, system=PERSONA,
         messages=[{"role": "user", "content": "\n".join(asks) + "\n\n" + _email_prompt(safe)}],
@@ -221,7 +221,7 @@ def propose_meeting(email_id: str) -> dict:
 
 
 # ------------------------------------------------------------------ meeting prep
-PREP_SCHEMA = _obj({"summary": {"type": "string"}, "open_questions": {"type": "array", "items": {"type": "string"}}})
+PREP_SCHEMA = _obj({"summary": {"type": "string"}, "follow_up_actions": {"type": "array", "items": {"type": "string"}}})
 _STOP = {"with", "the", "and", "for", "call", "meeting", "session", "podcast", "review", "prep"}
 
 
@@ -241,7 +241,7 @@ def related_emails(event: dict, limit: int = 4) -> list[dict]:
 def meeting_prep(event: dict) -> dict:
     emails = related_emails(event)
     if not emails:
-        return {"summary": "No related emails found.", "open_questions": [], "related_emails": []}
+        return {"summary": "No related emails found.", "follow_up_actions": [], "related_emails": []}
     r = Redactor()
     blocks = [_email_prompt(redact_email(e, r)[0]) for e in emails]
     out = llm.create_json(
@@ -249,8 +249,15 @@ def meeting_prep(event: dict) -> dict:
         messages=[{"role": "user", "content":
                    f"Monica has this meeting coming up: {event['title']} at {event['start']} "
                    f"with {', '.join(event.get('attendees', [])) or 'no listed attendees'}.\n"
-                   "From the related emails below, write a two-sentence summary of what she should know, and list "
-                   "open questions still waiting on an answer (empty list if none).\n\n" + "\n\n=====\n\n".join(blocks)}],
+                   "Write directly to the reader using you/your, never Monica/she/her. "
+                   "From the related emails below, write a concise summary (at most two sentences) of what you need to know. "
+                   "follow_up_actions: at most three specific, unfinished next steps grounded in those emails. "
+                   "Start each with a verb, e.g. 'Confirm a new time with Carla.' Use short sentences, not questions. "
+                   "Only include actions explicitly requested or necessary to resolve the request in the related emails. "
+                   "Never add notifications to supervisors or other people merely mentioned in your background persona. "
+                   "Do not pad the list with optional tasks such as inform someone if necessary. One action is enough. "
+                   "Do not invent tasks, deadlines, or availability, or imply a suggestion is already completed. "
+                   "Use an empty list when nothing needs following up. Do not repeat the actions in the summary.\n\n" + "\n\n=====\n\n".join(blocks)}],
     )
     out = json.loads(r.restore(json.dumps(out)))
     out["related_emails"] = [{"id": e["id"], "from_name": e["from_name"], "subject": e["subject"]} for e in emails]

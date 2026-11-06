@@ -22,7 +22,7 @@ If Claude declines a request: **422** `{"error": "ai_refused", "message": "..."}
 | GET | `/api/calendar/events?start=&end=` | | Merged events (default 4 weeks) |
 | GET | `/api/calendar/conflicts` | | Upcoming overlaps |
 | GET | `/api/calendar/free-slots?date=&minutes=` | | Open times on a day |
-| GET | `/api/meetings/{event_id}/prep` | AI | Related emails + open questions (cached after first call) |
+| GET | `/api/meetings/{event_id}/prep` | AI | Related emails + summary + `follow_up_actions` (short action sentences; cached after first call) |
 | GET | `/api/emails?category=` | | Inbox with saved `triage`; category = reply_needed / scheduling / fyi / urgent |
 | GET | `/api/emails/{id}` | | One email + `history` + `triage` |
 | GET | `/api/emails/{id}/privacy` | | Exactly what the AI receives + `hidden_count` |
