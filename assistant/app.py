@@ -245,11 +245,11 @@ def meeting_prep(event_id: str):
     ev = next((e for e in ds.merged_events() if e.id == event_id), None)
     if not ev:
         raise HTTPException(404, "event not found")
-    cached = state.cache_get("prep").get(event_id)
+    cached = state.cache_get("prep_reader_v3").get(event_id)
     if cached:
         return cached
     out = {"event_id": event_id} | features.meeting_prep(ev.to_dict())
-    state.cache_put("prep", event_id, out)
+    state.cache_put("prep_reader_v3", event_id, out)
     return out
 
 
